@@ -1,0 +1,76 @@
+.teen{
+    color: #0bd46e;
+    font-size: 120px;
+    margin-left: 20px;
+    text-align: left;
+}
+.twoText{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: -20px;
+}
+.teen1{
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: -50px;
+  color: gray;
+text-align: left;
+}
+.mean{
+    color: gray;
+    font-size: 30px;
+    margin-top: -60px;
+    /* border: 1px solid white; */
+}
+.services{
+    color: white;
+    font-size: 40px;
+}
+
+.slideshow {
+    /* margin: 0 auto; */
+    overflow: hidden;
+    max-width: 220px;
+  text-align: left;
+  }
+.slideshowSlider {
+    white-space: nowrap;
+ display: flex;
+  }
+  
+  .slide {
+    display: inline-block;
+    /* width: 30%; */
+    margin-top: 25%;
+    height: 400px;
+    transition: ease 1000ms;
+
+  }
+  
+  /* Buttons */
+  
+  .slideshowDots {
+    text-align: left;
+    margin-top: -90px;
+  }
+  
+  .slideshowDot {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+  
+    cursor: pointer;
+    margin: 15px 4px 0px;
+  
+    background-color: #c4c4c4;
+  }
+  
+  .slideshowDot.active {
+    background-color: #0bd46e;
+  }
+  .lastText{
+    color: white;
+    font-size: 25px;
+  }

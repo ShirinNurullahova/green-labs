@@ -1,0 +1,55 @@
+.blackDiv {
+    width: 100vw;
+    height:max-content;
+    background-color: #222;
+    display: none;
+}
+
+.weare {
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+    position: absolute;
+    font-size: 120px;
+    z-index: 999;
+    font-weight: 700;
+}
+
+.who {
+    font-size: 120px;
+    color: white;
+    z-index: 999;
+}
+
+.whoWe {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    padding-top: 40%;
+    padding-left: 300px;
+}
+
+.middleDiv{
+    display: flex;
+}
+.office{
+    color: white;
+    margin-top: 17%;
+   margin-left: 15%;
+   width: 55%;
+   font-size: 25px;
+}
+
+.cardPartBorder{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    padding-bottom: 4%;
+    overflow-x: scroll;
+    width: max-content;
+    padding-top: 5%;
+}
+.cardPartBorder::-webkit-scrollbar {
+    display: none;
+  }
