@@ -1,0 +1,13 @@
+.footerEsas::before{
+    position: absolute;
+    left: 0;
+    top:100%;
+    width: 70%;
+    height: 0.3125em;
+    background: #0bd46e;
+    content: '';
+}
+.footerEsas{
+    position: relative;
+   display: none;
+}

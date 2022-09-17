@@ -1,4 +1,5 @@
-.green {
+
+ .green {
     background-color: #0bd46e;
     width: 100vw;
     height: 0;
@@ -7,7 +8,10 @@
     left: 0;
     top: 0;
 }
-
+.footer{
+    padding: 0 8% ;
+    
+}
 .white {
     background-color: #fff;
     width: 100vw;
@@ -22,11 +26,14 @@
     padding-top: 20%;
 
 }
-
+.sjsj{
+    opacity: 0.2;
+    transition: 1s ease all;
+}
 .ball1 {
     width: 40px;
     height: 40px;
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
@@ -53,13 +60,22 @@
 
 .mainPage {
     position: relative;
-    z-index: 999;
+    z-index: 996;
     padding: 0 8%;
     display: none;
+    margin-top: 5%;
+    margin-bottom: 10%;
+  
     /* overflow-y: scroll; */
     /* height: 200vh; */
 }
-
+.openMainPage{
+    display: none;
+}
+.transform{
+   
+    /* overflow: hidden; */
+}
 .logo1 {
     width: 60%;
     margin: 10px auto;
@@ -191,7 +207,15 @@
     transition: width .7s;
 
 }
-
+.hi , .hii{
+    display: none;
+}
+.sjsj{
+    /* margin-top: -3.8%; */
+    /* position:relative; */
+    /* overflow-y: hidden; */
+    display: none;
+}
 .text {
     margin-top: 2%;
 }
@@ -330,11 +354,10 @@
     align-items: center;
     align-content: center;
     text-align: center;
-
+    color:gray
 }
 
 a {
-    /* color: #0bd46e; */
     text-decoration: none;
     background-color: transparent
 }
@@ -350,7 +373,6 @@ a {
     text-align: center;
     padding: 7px 12px;
 }
-
 .mouse {
     position: relative;
     width: 15px;

@@ -1,0 +1,61 @@
+.marka{
+    display: flex;
+    flex-wrap: wrap;
+  
+    margin: 10% auto 10% 5%;
+}
+.marka-img{
+    width: 10%;
+    filter: grayscale(100%);
+    margin-right: 11%;
+    margin-bottom: 5%;
+}
+.marka-img:hover{
+    filter: grayscale(0);
+
+}
+.marka:last-child{
+    margin-right: 0 !important;
+}
+.esas-partner{
+    display: none;
+    position: relative;
+text-align: left;
+width: 80%;
+margin-left: 10%;
+margin-top: 20%;
+}
+#apple , #adam{
+    width: 3%;
+}
+#adam{
+    margin-right: 0;
+}
+#apple{
+    margin-right: 19%;
+}
+
+.set{
+    font-size: 1.875em;
+    line-height: 1.4375em;
+    font-weight: 300;
+   color: #868686;
+}
+.our{
+    font-size: 1.875em;
+    letter-spacing: .03125em;
+    line-height: 1.125em;
+    font-weight: 500;
+}
+.xett{
+    position: relative;
+}
+/* .xett::after{
+    position: absolute;
+    left: 0;
+    top:100%;
+    width: 70%;
+    height: 0.3125em;
+    background: #0bd46e;
+    content: '';
+} */

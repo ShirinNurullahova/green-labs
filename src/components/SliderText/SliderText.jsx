@@ -1,6 +1,6 @@
 import React from "react";
 import "../SliderText/SliderText.css"
-const textPart = [{ pg:"10+",span: "Years in Mena"},{ pg:"22+", span: "Live Projects"},{ pg:"30+",span: "Staff in 5 Countries"}];
+const textPart = [{ pg: "10+", span: "Years in Mena" }, { pg: "22+", span: "Live Projects" }, { pg: "30+", span: "Staff in 5 Countries" }];
 const delay = 2500;
 const SliderText = () => {
     const [index, setIndex] = React.useState(0);
@@ -30,31 +30,31 @@ const SliderText = () => {
     return (
         <div className="slideshow">
             <div
-                className="slideshowSlider"         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+                className="slideshowSlider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
 
             >
                 {textPart.map((textt, index) => {
 
 
                     return (
-                    
-                    <div
-                        className="slide"
-                        key={index}
-                    >
-                        <div className="twoText"> 
-                        <h1 className="teen">{textt.pg}</h1>
-                        <p className="teen1">{textt.span}</p>
-                        </div>
-                       
 
-                    </div>
+                        <div
+                            className="slide"
+                            key={index}
+                        >
+                            <div className="twoText">
+                                <h1 className="teen">{textt.pg}</h1>
+                                <p className="teen1">{textt.span}</p>
+                            </div>
+
+
+                        </div>
 
                     )
                 }
 
                 )}
-                
+
             </div>
 
             <div className="slideshowDots">

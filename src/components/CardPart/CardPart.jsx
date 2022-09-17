@@ -4,33 +4,31 @@ import smallPng from "../Images/small.png"
 
 const CardPart = () => {
     return (
-                  <div className="common1">
-            <img className="threee" src={smallPng} />
-            <div className="anim">
+        // <div className="maybe">
+        //     <div className="common1">
+        //         <img className="threee" src={smallPng} />
+        //         <div className="anim">
 
-                <p className="exp">Experience <br />Design
-                <hr/>
+        //             <p className="exp">Experience <br/>Design
+        //             <span className="icon-right-arrow right-arr"></span>
+        //                 <hr />
+        //             </p>
 
-                
-                </p>
-                
-                <div className="hoverDiv">
-                    <ul>
-                        <li className="point">User Interface Design</li>
-                        <li className="point">User Experience Design</li>
-                        <li className="point">Animation Design</li>
-                        
+        //             <div className="hoverDiv">
+        //                 <ul>
+        //                     <li className="point">User Interface Design</li>
+        //                     <li className="point">User Experience Design</li>
+        //                     <li className="point">Animation Design</li>
+        //                 </ul>
 
+        //             </div>
 
-                    </ul>
-
-                </div>
-
-            </div>
+        //         </div>
 
 
-        </div>
-  
+        //     </div>
+        // </div>
+        <></>
     )
 }
 export default CardPart

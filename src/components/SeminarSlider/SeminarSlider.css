@@ -1,0 +1,76 @@
+.seminar-slider__image-container {
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+
+}
+
+.seminar-slider__image-container::-webkit-scrollbar {
+    display: none !important;
+}
+
+.seminar-slider__control-range {
+    width: 40%;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    transition: all 0.3s;
+}
+
+input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    pointer-events: auto;
+    border: 1.5px solid #0bd46e ;
+    background-color: #191817;
+    /* position: absolute; */
+}
+
+input::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 21px;
+    width: 21px;
+    cursor: pointer;
+    border-radius: 50%;
+    pointer-events: auto;
+    border: 1.5px solid black;
+    background-color: gray;
+}
+
+input::-ms-thumb {
+    -webkit-appearance: none;
+    height: 21px;
+    width: 21px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 50%;
+    pointer-events: auto;
+    border: 1.5px solid red;
+}
+
+input::-ms-track {
+    -webkit-appearance: none;
+}
+
+input::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+}
+
+input::-moz-range-track {
+    -webkit-appearance: none;
+}
+
+input:active::-webkit-slider-thumb {
+    /* background-color: #ffffff; */
+   
+}

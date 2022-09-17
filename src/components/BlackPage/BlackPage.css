@@ -1,8 +1,162 @@
 .blackDiv {
     width: 100vw;
-    height:max-content;
-    background-color: #222;
+    margin-top: 20%;
+    height: max-content;
+    background-color: #191817;
     display: none;
+}
+
+.dragger-text {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 5%;
+}
+.dragger {
+    position: relative;
+    width: 100%;
+    height: 2.375em;
+    margin: 0 0 1.875em 0;
+}
+.dragger:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 1px;
+    width: 100%;
+    background: gray;
+    content: '';
+}
+.handle {
+    width: 2.375em;
+    height: 2.375em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1004;
+    /* transform: translate3d(191.484px, 0px, 0px); */
+    touch-action: pan-y;
+    cursor: grab;
+    user-select: none;
+}
+
+.dragger-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 1px;
+    width: 0%;
+    background-color: #0bd46e ;
+    content: '';
+}
+.handle:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-50%) scale(.2);
+    background: #0bd46e;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    transition: all .5s cubic-bezier(.68,-.55,0,2.46);
+    content: '';
+}
+.handle:hover.handle:after{
+    transform: translate(-18px, 1px) scale(0.8);
+    /* transition: 0.5s ease all; */
+
+}
+.handle:before {
+    transform: translateX(-48%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #191817;
+    /* z-index: 1; */
+    border: solid 1px #0bd46e ;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    content: '';
+}
+.flu {
+
+    max-width: 100%;
+    height: auto;
+
+}
+.es{
+    position: relative;
+    width: 33.125em;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.dragger-text p {
+   width: 20%;
+    position: relative;
+    left: -25px;
+    display: block;
+    margin: 0 auto;
+    animation: animationFrames 4s infinite;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    transform-origin: 50% 50%;
+    -webkit-animation: animationFrames ease 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: reverse;
+    -webkit-transform-origin: 50% 50%;
+    -moz-animation: animationFrames ease 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: reverse;
+    -moz-transform-origin: 50% 50%;
+    -o-animation: animationFrames ease 4s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: reverse;
+    -o-transform-origin: 50% 50%;
+    -ms-animation: animationFrames ease 4s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-direction: reverse;
+    -ms-transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames {
+
+    0%,
+    100% {
+        left: -50px;
+    }
+
+    50% {
+        left: 50px;
+    }
+}
+
+.drag {
+
+    display: block;
+    font-size: 1.875em;
+    font-weight: 900;
+    margin: 10% 0 0.625em 0;
+    color: #5D5D5D
 }
 
 .weare {
@@ -26,30 +180,32 @@
     align-self: flex-start;
     justify-content: flex-start;
     text-align: left;
-    padding-top: 40%;
+    padding-top: 25%;
     padding-left: 300px;
 }
 
-.middleDiv{
+.middleDiv {
     display: flex;
 }
-.office{
+
+.office {
     color: white;
     margin-top: 17%;
-   margin-left: 15%;
-   width: 55%;
-   font-size: 25px;
+    margin-left: 15%;
+    width: 55%;
+    font-size: 25px;
 }
 
-.cardPartBorder{
+.cardPartBorder {
     display: flex;
     flex-direction: row;
     margin-top: 5%;
     padding-bottom: 4%;
-    overflow-x: scroll;
-    width: max-content;
+    /* overflow: scroll; */
+    width: auto;
     padding-top: 5%;
 }
+
 .cardPartBorder::-webkit-scrollbar {
     display: none;
-  }
+}

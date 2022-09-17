@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef ,forwardRef } from "react"
+import React, { useState, useEffect, useRef, forwardRef } from "react"
 import loader from "../Images/loader.svg";
 import random from "../Images/randomm.svg";
 import partlogo from "../Images/tc-top-logo.svg";
@@ -8,11 +8,28 @@ import "../HomePage/HomePage.css"
 import { gsap } from "gsap";
 import BlackPage from "../BlackPage/BlackPage";
 import TextAnime from "../TextAnimation/TextAnime"
+import Supports from "../Supports/Supports";
+import Partners from "../Partners/Partners";
+import Footer from "../Footer/Footer";
+import Menu from '../HomePage/Menu/Menu'
+
 gsap.registerPlugin(ScrollTrigger)
 
+let anna = 0
 
 const HomePage = () => {
-
+  const [menu , setMenu] = useState(false);
+    
+  const toggleMenu= (e) =>{
+    e.preventDefault()
+      if(menu){
+        setMenu(false)
+          console.log("salam")
+      }else{
+       setMenu(true)
+        console.log("sagol")
+      }
+   }
 
   const [loading, setLoading] = useState(true);
   const boxRef = useRef();
@@ -26,6 +43,33 @@ const HomePage = () => {
   const tRef = useRef()
   const rRef = useRef()
   const aRef = useRef()
+  const nRef = useRef()
+  const sRef = useRef()
+  const fRef = useRef()
+  const RRef = useRef()
+  const mRef = useRef()
+  const iRef = useRef()
+  const NRef = useRef()
+  const gRef = useRef()
+  const one = useRef()
+  const two = useRef()
+  const three = useRef()
+  const four = useRef()
+  const five = useRef()
+  const six = useRef()
+  const seven = useRef()
+  const eight = useRef()
+  const nine = useRef()
+  const ten = useRef()
+  const a = useRef()
+  const b = useRef()
+  const c = useRef()
+  const d = useRef()
+  const e= useRef()
+  const f = useRef()
+  const g = useRef()
+  const h = useRef()
+  const j = useRef()
   // image stranger
   const listRef1 = useRef()
   const listRef111 = useRef()
@@ -67,16 +111,27 @@ const HomePage = () => {
   // header
   const touchRef = useRef()
   const blackRef = useRef()
+  const supportRef = useRef()
+  const partnerRef = useRef();
+  const footerRef=useRef();
   // animation 3d 
   const digitRef = useRef()
   const ulRef = useRef()
-const textRef=useRef()
+  const textRef = useRef()
 
   useEffect(() => {
-    const tl = gsap.timeline()
-    console.log("salam")
+    
+    anna++
+    if(anna >= 4){
+      console.log('cixmag vaxtidi')
+      return
+    }
+    console.log('girdiyeeee girdi girdi ')
+
+    let tl = gsap.timeline()
+    // console.log("salam")
     setTimeout(() => {
-      console.log("sagol")
+      // console.log("sagol")
       setLoading(false);
 
     }, 3000);
@@ -85,8 +140,192 @@ const textRef=useRef()
       .to(boxRef2.current, { display: "block", duration: 1.5 }, ">")
       .to(blackRef.current, { display: "block", duration: 1.5 }, "<")
       .to(textRef.current, { display: "block", duration: 1.5 }, "<")
-
+      .to(supportRef.current, { display: "block", duration: 1.5 }, "<")
+      .to(partnerRef.current, { display: "block", duration: 1.5 }, "<")
+      .to(footerRef.current, { display: "block", duration: 1.5 }, "<")
       .fromTo(greenRef.current, { scale: 20, duration: 2 }, { scale: 1 }, "<")
+
+
+      .fromTo(tRef.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(rRef.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(aRef.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(nRef.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(sRef.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(fRef.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(RRef.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(mRef.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(iRef.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(NRef.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(gRef.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(one.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(two.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(three.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(four.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(five.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(six.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(seven.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(eight.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(nine.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(ten.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(a.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(b.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(c.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(d.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(e.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(f.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(g.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(h.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
+      .fromTo(j.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05
+      }, '<')
       .from(touchRef.current, { duration: 1, opacity: 0, y: -200 }, "<")
       .from(logoRef.current, { duration: 1, opacity: 0, x: -200 }, "<")
       .from(footRef.current, { duration: 1, opacity: 0, y: 200 }, "<")
@@ -108,7 +347,7 @@ const textRef=useRef()
       .fromTo(listRef16.current, { opacity: 0 }, { opacity: 1, delay: 0.1 }, "<")
       .fromTo(listRef17.current, { opacity: 0 }, { opacity: 1, delay: 0.1 }, "<")
 
-      .to(listRef2.current, { transform: "translate(0px, 4.1176%" }, "<")
+      .to(listRef2.current, { transform: "translate(0px, 4.1176%)" }, "<")
       .to(listRef3.current, { transform: "translate(0px, 8.2353%)" }, "<")
       .to(listRef4.current, { transform: "translate(0px,  12.3529%)" }, "<")
       .to(listRef5.current, { transform: "translate(0px,  16.4706%)" }, "<")
@@ -318,19 +557,21 @@ const textRef=useRef()
       <img className="loadload" src={loader} />
     </>
   }
-
-
+ 
+  
   return (
     <>
-      <div>
-        <div className="green" ref={boxRef}></div>
+       <Menu menu={menu} setMenu={setMenu}/>
 
-        <div className="white" ref={boxRef1}></div>
+      <div>
+        <div className={`green ${menu && 'hi'}`} ref={boxRef}></div>
+
+        <div className={`white ${menu && 'hii'}`} ref={boxRef1}></div>
 
         <div className="ball1" ref={ballRef}></div>
         <div className="ball" ref={refSmall}> </div>
 
-        <div className="mainPage" ref={boxRef2}>
+        <div className={`mainPage ${menu && "sjsj"}`}  ref={boxRef2} >
 
           <div className="header">
 
@@ -389,7 +630,7 @@ const textRef=useRef()
 
 
 
-              <div className="circle">
+              <div className="circle" onClick={toggleMenu}>
                 <span className="bl"></span>
                 <span className="bl"></span>
                 <span className="bl"></span>
@@ -398,32 +639,62 @@ const textRef=useRef()
             </div>
 
           </div>
-          <div className="text">
-            <div className="transform">
-              <div ref={tRef} className="textt">T</div>
-              <div className="textt" ref={rRef} >R</div>
-              <div ref={aRef}>A</div>
-              <div>N</div>
-              <div>S</div>
-              <div>F</div>
-              <div><span className="greeno" ref={greenRef}></span></div>
+          <h1 className="text">
+            <span className="transform">
+              <div style={{ overflow: "hidden" , display:"flex" }}>
+                <div ref={tRef} className="textt">T</div>
+                <div className="textt" ref={rRef} >R</div>
+                <div ref={aRef}>A</div>
+                <div ref={nRef}>N</div>
+                <div ref={sRef}>S</div>
+                <div ref={fRef}>F</div>
+              </div>
+              <div style={{ position: "relative " }}><span className="greeno" ref={greenRef}></span></div>
+              <div style={{ overflow: "hidden" , display:"flex" }}>
+                <div ref={RRef}>R</div>
+                <div ref={mRef}>M</div>
+                <div ref={iRef}>I</div>
+                <div ref={NRef}>N</div>
+                <div ref={gRef}>G</div>
+              </div>
+            </span>
 
-              <div>R</div>
-              <div>M</div>
-              <div>I</div>
-              <div>N</div>
-              <div>G</div>
-            </div>
 
+            <h1 className="business" ><span className="busin" style={{display:"flex" , overflow:"hidden"}}>
+                <div ref={one}>B</div>
+                <div ref={two}>U</div>
+                <div ref={three}>S</div>
+                <div ref={four}>I</div>
+                <div ref={five}>N</div>
+                <div ref={six}>E</div>
+                <div ref={seven}>S</div>
+                <div ref={eight}>S</div>
+                <div ref={nine}>E</div>
+                <div ref={ten}>S</div>
+               </span>
+            </h1>
+            <p className="digit" style={{display:"flex", overflow:"hidden"}}>
+              <div ref={a}>D</div>
+              <div ref={b}>I</div>
+              <div ref={c}>G</div>
+              <div ref={d}>I</div>
+              <div ref={e}>T</div>
+              <div ref={f}>A</div>
+              <div ref={g}>L</div>
+              <div ref={h}>L</div>
+              <div ref={j}>Y</div>
+             
+              
+              </p>
 
-            <h1 className="business"><span className="busin"> BUSINESSES</span></h1>
-            <p className="digit">DIGITALLY</p>
-
-          </div>
+          </h1>
         </div>
 
         <div className="footer" ref={footRef} >
-          <a aria-label="Scroll<br> to Explore" href="#blackDiv" data-page-scroll-link-offset="350" data-page-scroll-link="#about-section" className="scroll-to-explore" >
+          <a 
+          onMouseEnter={handler} onMouseLeave={nonHandler}
+          
+          aria-label="Scroll<br> to Explore" href="#blackDiv" data-page-scroll-link-offset="350" data-page-scroll-link="#about-section" className="scroll-to-explore" >
             <div class="mouse-wheel">
               <div class="mouse"></div>
             </div>
@@ -439,7 +710,7 @@ const textRef=useRef()
             <li ref={listRef113}>    <img ref={listRef3} src={line} className="stranger" /></li>
             <li ref={listRef114}>   <img ref={listRef4} src={line} className="stranger" /></li>
             <li ref={listRef115}>   <img ref={listRef5} src={line} className="stranger" /></li>
-            <li ref={listRef116}> <img ref={listRef6} src={line} className="stranger" /></li>
+            <li ref={listRef116}>   <img ref={listRef6} src={line} className="stranger" /></li>
             <li ref={listRef117}>  <img ref={listRef7} src={line} className="stranger" /></li>
             <li ref={listRef118}>   <img ref={listRef8} src={line} className="stranger" /></li>
             <li ref={listRef119}>   <img ref={listRef9} src={line} className="stranger" /></li>
@@ -457,7 +728,10 @@ const textRef=useRef()
 
       </div>
       <BlackPage ref={blackRef} />
-      <TextAnime ref={textRef}/>
+      <TextAnime ref={textRef} />
+      <Supports ref={supportRef} />
+      <Partners ref={partnerRef} />
+      <Footer ref={footerRef}/>
     </>
   )
 
