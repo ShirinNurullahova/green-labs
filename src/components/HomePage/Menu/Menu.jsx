@@ -14,16 +14,70 @@ const Menu = (props) => {
     const bottomRef = React.useRef()
     const headRef = useRef()
     const menuYazi= useRef()
+    const menuYazi1= useRef()
+    const menuYazi2= useRef()
+    const menuYazi3= useRef()
+    const menuYazi4= useRef()
+
     const asRef= useRef()
+    const asRef1= useRef()
+    const asRef2= useRef()
+    const asRef3= useRef()
+    const asRef4= useRef()
+
    const onMHover=()=>{
-    console.log(menuYazi)
+    // console.log(menuYazi)
     menuYazi.current.style.display="block";
     asRef.current.style.display="none"
    }
+   const onMHover1=()=>{
+    // console.log(menuYazi)
+    menuYazi1.current.style.display="block";
+    menuYazi1.current.style.marginTop='-2%'
+    asRef1.current.style.display="none"
+   }
+   const onMHover2=()=>{
+    // console.log(menuYazi)
+    menuYazi2.current.style.display="block";
+    menuYazi2.current.style.marginTop='-4%'
+    asRef2.current.style.display="none"
+   }
+   const onMHover3=()=>{
+    // console.log(menuYazi)
+    menuYazi3.current.style.display="block";
+    menuYazi3.current.style.marginTop='-6%'
+    asRef3.current.style.display="none"
+   }
+   const onMHover4=()=>{
+    // console.log(menuYazi)
+    menuYazi4.current.style.display="block";
+    menuYazi4.current.style.marginTop='-8%'
+    asRef4.current.style.display="none"
+   }
    const onMLeave=()=>{
-    console.log(menuYazi)
+    // console.log(menuYazi)
     menuYazi.current.style.display="none";
     asRef.current.style.display="block"
+   }
+   const onMLeave1=()=>{
+    // console.log(menuYazi)
+    menuYazi1.current.style.display="none";
+    asRef1.current.style.display="block"
+   }
+   const onMLeave2=()=>{
+    // console.log(menuYazi)
+    menuYazi2.current.style.display="none";
+    asRef2.current.style.display="block"
+   }
+   const onMLeave3=()=>{
+    // console.log(menuYazi)
+    menuYazi3.current.style.display="none";
+    asRef3.current.style.display="block"
+   }
+   const onMLeave4=()=>{
+    // console.log(menuYazi)
+    menuYazi4.current.style.display="none";
+    asRef4.current.style.display="block"
 
    }
     const open = () => {
@@ -62,17 +116,85 @@ const Menu = (props) => {
                                 </div>
                             </main>
                         </div>
-                        <div style={{position:"relative"}} >
-                            <span  className='as'  style={{position:"absolute", marginLeft:"18%", marginTop:"-2%" }}>Who We Are</span>
+                        <div style={{position:"relative"}} onMouseEnter={onMHover1} onMouseLeave={onMLeave1}>
+                            <span  className='as' ref={asRef1}  style={{position:"absolute", marginLeft:"18%", marginTop:"-2%" }}>Who We Are</span>
+                            <main className='coming1' ref={menuYazi1} style={{display:"none", position:"absolute"}}>
+                                <div className="coming-heading1 scroll1">
+                                    <div className='m-scroll1' >
+                                        <div className="list-p">
+                                            {sampleData.map((el, index) => {
+                                                return (
+                                                    <>
+                                                        <Title title={el.title} setActiveIndex={setActiveIndex} index={index} />
+
+                                                    </>)
+                                            }
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+
+
+
                         </div>
-                        <div style={{position:"relative"}} >
-                            <span  className='as'  style={{position:"absolute" , marginLeft:"18%", marginTop:"-4%"}}>Careers</span>
+                        <div style={{position:"relative"}} onMouseEnter={onMHover2} onMouseLeave={onMLeave2}>
+                            <span  className='as' ref={asRef2} style={{position:"absolute" , marginLeft:"18%", marginTop:"-4%"}}>Careers</span>
+                            <main className='coming1' ref={menuYazi2} style={{display:"none", position:"absolute"}}>
+                                <div className="coming-heading1 scroll1">
+                                    <div className='m-scroll1' >
+                                        <div className="list-p">
+                                            {sampleData.map((el, index) => {
+                                                return (
+                                                    <>
+                                                        <Title title={el.title} setActiveIndex={setActiveIndex} index={index} />
+
+                                                    </>)
+                                            }
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+
                         </div>
-                        <div style={{position:"relative"}} >
-                            <span  className='as'  style={{position:"absolute" , marginLeft:"18%",marginTop:"-6%"}}>Blogs</span>
+                        <div style={{position:"relative"}} onMouseEnter={onMHover3} onMouseLeave={onMLeave3}>
+                            <span  className='as' ref={asRef3}  style={{position:"absolute" , marginLeft:"18%",marginTop:"-6%"}}>Blogs</span>
+                            <main className='coming1' ref={menuYazi3} style={{display:"none", position:"absolute"}}>
+                                <div className="coming-heading1 scroll1">
+                                    <div className='m-scroll1' >
+                                        <div className="list-p">
+                                            {sampleData.map((el, index) => {
+                                                return (
+                                                    <>
+                                                        <Title title={el.title} setActiveIndex={setActiveIndex} index={index} />
+
+                                                    </>)
+                                            }
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
                         </div>
-                        <div style={{position:"relative"}} >
-                            <span  className='as'  style={{position:"absolute" , marginLeft:"18%", marginTop:"-8%"}}>Work</span>
+                        <div style={{position:"relative"}} onMouseEnter={onMHover4} onMouseLeave={onMLeave4}>
+                            <span  className='as'  ref={asRef4}  style={{position:"absolute" , marginLeft:"18%", marginTop:"-8%"}}>Work</span>
+                            <main className='coming1' ref={menuYazi4} style={{display:"none", position:"absolute"}}>
+                                <div className="coming-heading1 scroll1">
+                                    <div className='m-scroll1' >
+                                        <div className="list-p">
+                                            {sampleData.map((el, index) => {
+                                                return (
+                                                    <>
+                                                        <Title title={el.title} setActiveIndex={setActiveIndex} index={index} />
+
+                                                    </>)
+                                            }
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
                         </div>
                     </div>
 

@@ -754,8 +754,8 @@ const HomePage = () => {
             <li ref={listRef118}  >   <img ref={listRef8} src={line} className="stranger" /></li>
             <li ref={listRef119} >   <img ref={listRef9} src={line} className="stranger" /></li>
             <li ref={listRef120} >   <img ref={listRef10} src={line} className="stranger" /></li>
-            <li ref={listRef121}  >   <img ref={listRef11} src={line} className="stranger" /></li>
-            <li ref={listRef122}  >   <img ref={listRef12} src={line} className="stranger" /></li>
+            <li ref={listRef121}>   <img ref={listRef11} src={line} className="stranger" /></li>
+            <li ref={listRef122}>   <img ref={listRef12} src={line} className="stranger" /></li>
             <li ref={listRef123}  >   <img ref={listRef13} src={line} className="stranger" /></li>
             <li ref={listRef124}  >   <img ref={listRef14} src={line} className="stranger" /></li>
             <li ref={listRef125}  >   <img ref={listRef15} src={line} className="stranger" /></li>
