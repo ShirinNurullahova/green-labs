@@ -179,7 +179,8 @@ const BlackPage = forwardRef((props, ref) => {
 
 
   return (
-    <div className="blackDiv" id='blackDiv' ref={ref}>
+ 
+    <div className="blackDiv" id='blackDiv' ref={ref} >
 
       <div className="whoWe" >
         <h1 className="main-text" ref={mainRef}>
@@ -191,7 +192,7 @@ const BlackPage = forwardRef((props, ref) => {
 
           <br />
 
-          <span className="weare" style={{ display: "flex", overflow: "hidden" }}>
+          <span className="weare" style={{ display: "flex", overflow: "hidden", position:"absolute" , zIndex:1 }}>
             <div ref={text4}>W</div>
             <div ref={text5} style={{ paddingRight: '40px' }}>e</div>
 
@@ -226,6 +227,7 @@ const BlackPage = forwardRef((props, ref) => {
 
       </div>
     </div>
+    
   )
 }
 )

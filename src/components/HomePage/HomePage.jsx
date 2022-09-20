@@ -11,25 +11,34 @@ import TextAnime from "../TextAnimation/TextAnime"
 import Supports from "../Supports/Supports";
 import Partners from "../Partners/Partners";
 import Footer from "../Footer/Footer";
-import Menu from '../HomePage/Menu/Menu'
+import Menu from '../HomePage/Menu/Menu';
+import { ScrollRotate } from 'react-scroll-rotate';
 
 gsap.registerPlugin(ScrollTrigger)
 
 let anna = 0
 
 const HomePage = () => {
-  const [menu , setMenu] = useState(false);
-    
-  const toggleMenu= (e) =>{
+
+
+
+
+
+
+
+
+  const [menu, setMenu] = useState(false);
+
+  const toggleMenu = (e) => {
     e.preventDefault()
-      if(menu){
-        setMenu(false)
-          console.log("salam")
-      }else{
-       setMenu(true)
-        console.log("sagol")
-      }
-   }
+    if (menu) {
+      setMenu(false)
+      console.log("salam")
+    } else {
+      setMenu(true)
+      console.log("sagol")
+    }
+  }
 
   const [loading, setLoading] = useState(true);
   const boxRef = useRef();
@@ -65,7 +74,7 @@ const HomePage = () => {
   const b = useRef()
   const c = useRef()
   const d = useRef()
-  const e= useRef()
+  const e = useRef()
   const f = useRef()
   const g = useRef()
   const h = useRef()
@@ -113,20 +122,35 @@ const HomePage = () => {
   const blackRef = useRef()
   const supportRef = useRef()
   const partnerRef = useRef();
-  const footerRef=useRef();
+  const footerRef = useRef();
   // animation 3d 
   const digitRef = useRef()
   const ulRef = useRef()
   const textRef = useRef()
 
+  const [show, setShow] = useState(true)
+  const controlNavbar = () => {
+    if (window.scrollY > 250) {
+      setShow(false)
+    } else {
+      setShow(true)
+    }
+  }
+
   useEffect(() => {
-    
+    window.addEventListener('scroll', controlNavbar)
+    return () => {
+      window.removeEventListener('scroll', controlNavbar)
+    }
+  }, [])
+  useEffect(() => {
+
     anna++
-    if(anna >= 4){
-      console.log('cixmag vaxtidi')
+    if (anna >= 4) {
+      // console.log('cixmag vaxtidi')
       return
     }
-    console.log('girdiyeeee girdi girdi ')
+    // console.log('girdiyeeee girdi girdi ')
 
     let tl = gsap.timeline()
     // console.log("salam")
@@ -364,7 +388,7 @@ const HomePage = () => {
       .to(listRef16.current, { transform: "translate(0px,  61.7647%)" }, "<")
       .to(listRef17.current, { transform: "translate(0px,  65.8824%)" }, "<")
       // .to(digitRef.current, {
-      //   transform: "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -140, 1, 1)", scrollTrigger: {
+      //   rotateY: "-3.142rad", scrollTrigger: {
       //     trigger: digitRef.current,
       //     // markers :true,
       //     scrub: true
@@ -384,6 +408,19 @@ const HomePage = () => {
           scrub: true
         }
       }, "<")
+      // .fromTo(listRef111.current,  { rotateY: "3.142rad" }, {
+
+      //   rotateY: "0",
+
+      //   scrollTrigger: {
+      //     // start: 'top top',
+      //     end: "+=300",
+      //     // markers: true,
+      //     trigger: listRef111.current,
+      //     scrub: true,
+      //     // pin: true,
+      //   },
+      // }, '<')
       .to(listRef112.current, {
         rotateY: "3.142rad", scrollTrigger: {
           trigger: listRef112.current,
@@ -557,11 +594,11 @@ const HomePage = () => {
       <img className="loadload" src={loader} />
     </>
   }
- 
-  
+
+
   return (
     <>
-       <Menu menu={menu} setMenu={setMenu}/>
+      <Menu menu={menu} setMenu={setMenu} />
 
       <div>
         <div className={`green ${menu && 'hi'}`} ref={boxRef}></div>
@@ -571,7 +608,7 @@ const HomePage = () => {
         <div className="ball1" ref={ballRef}></div>
         <div className="ball" ref={refSmall}> </div>
 
-        <div className={`mainPage ${menu && "sjsj"}`}  ref={boxRef2} >
+        <div className={`mainPage ${menu && "sjsj"}`} ref={boxRef2} >
 
           <div className="header">
 
@@ -639,9 +676,10 @@ const HomePage = () => {
             </div>
 
           </div>
+
           <h1 className="text">
             <span className="transform">
-              <div style={{ overflow: "hidden" , display:"flex" }}>
+              <div style={{ overflow: "hidden", display: "flex" }}>
                 <div ref={tRef} className="textt">T</div>
                 <div className="textt" ref={rRef} >R</div>
                 <div ref={aRef}>A</div>
@@ -650,7 +688,7 @@ const HomePage = () => {
                 <div ref={fRef}>F</div>
               </div>
               <div style={{ position: "relative " }}><span className="greeno" ref={greenRef}></span></div>
-              <div style={{ overflow: "hidden" , display:"flex" }}>
+              <div style={{ overflow: "hidden", display: "flex" }}>
                 <div ref={RRef}>R</div>
                 <div ref={mRef}>M</div>
                 <div ref={iRef}>I</div>
@@ -660,20 +698,20 @@ const HomePage = () => {
             </span>
 
 
-            <h1 className="business" ><span className="busin" style={{display:"flex" , overflow:"hidden"}}>
-                <div ref={one}>B</div>
-                <div ref={two}>U</div>
-                <div ref={three}>S</div>
-                <div ref={four}>I</div>
-                <div ref={five}>N</div>
-                <div ref={six}>E</div>
-                <div ref={seven}>S</div>
-                <div ref={eight}>S</div>
-                <div ref={nine}>E</div>
-                <div ref={ten}>S</div>
-               </span>
+            <h1 className="business" ><span className="busin" style={{ display: "flex", overflow: "hidden" }}>
+              <div ref={one}>B</div>
+              <div ref={two}>U</div>
+              <div ref={three}>S</div>
+              <div ref={four}>I</div>
+              <div ref={five}>N</div>
+              <div ref={six}>E</div>
+              <div ref={seven}>S</div>
+              <div ref={eight}>S</div>
+              <div ref={nine}>E</div>
+              <div ref={ten}>S</div>
+            </span>
             </h1>
-            <p className="digit" style={{display:"flex", overflow:"hidden"}}>
+            <p className="digit" style={{ display: "flex", overflow: "hidden" }}>
               <div ref={a}>D</div>
               <div ref={b}>I</div>
               <div ref={c}>G</div>
@@ -683,18 +721,18 @@ const HomePage = () => {
               <div ref={g}>L</div>
               <div ref={h}>L</div>
               <div ref={j}>Y</div>
-             
-              
-              </p>
+
+
+            </p>
 
           </h1>
         </div>
 
         <div className="footer" ref={footRef} >
-          <a 
-          onMouseEnter={handler} onMouseLeave={nonHandler}
-          
-          aria-label="Scroll<br> to Explore" href="#blackDiv" data-page-scroll-link-offset="350" data-page-scroll-link="#about-section" className="scroll-to-explore" >
+          <a
+            onMouseEnter={handler} onMouseLeave={nonHandler}
+
+            aria-label="Scroll<br> to Explore" href="#blackDiv" data-page-scroll-link-offset="350" data-page-scroll-link="#about-section" className="scroll-to-explore" >
             <div class="mouse-wheel">
               <div class="mouse"></div>
             </div>
@@ -703,35 +741,104 @@ const HomePage = () => {
           </a>
         </div>
 
-        <div className="digital-lines" ref={digitRef}>
+
+        <div className="digital-lines" ref={digitRef} >
           <ul className="g-line-list" ref={ulRef}>
-            <li ref={listRef111}>   <img ref={listRef1} src={line} className="stranger" /></li>
-            <li ref={listRef112}>    <img ref={listRef2} src={line} className="stranger" /></li>
-            <li ref={listRef113}>    <img ref={listRef3} src={line} className="stranger" /></li>
-            <li ref={listRef114}>   <img ref={listRef4} src={line} className="stranger" /></li>
-            <li ref={listRef115}>   <img ref={listRef5} src={line} className="stranger" /></li>
+            <li ref={listRef111}  >   <img ref={listRef1} src={line} className="stranger" /></li>
+            <li ref={listRef112}  >    <img ref={listRef2} src={line} className="stranger" /></li>
+            <li ref={listRef113}  >    <img ref={listRef3} src={line} className="stranger" /></li>
+            <li ref={listRef114} >   <img ref={listRef4} src={line} className="stranger" /></li>
+            <li ref={listRef115} >   <img ref={listRef5} src={line} className="stranger" /></li>
             <li ref={listRef116}>   <img ref={listRef6} src={line} className="stranger" /></li>
-            <li ref={listRef117}>  <img ref={listRef7} src={line} className="stranger" /></li>
-            <li ref={listRef118}>   <img ref={listRef8} src={line} className="stranger" /></li>
-            <li ref={listRef119}>   <img ref={listRef9} src={line} className="stranger" /></li>
-            <li ref={listRef120}>   <img ref={listRef10} src={line} className="stranger" /></li>
-            <li ref={listRef121}>   <img ref={listRef11} src={line} className="stranger" /></li>
-            <li ref={listRef122}>   <img ref={listRef12} src={line} className="stranger" /></li>
-            <li ref={listRef123}>   <img ref={listRef13} src={line} className="stranger" /></li>
-            <li ref={listRef124}>   <img ref={listRef14} src={line} className="stranger" /></li>
-            <li ref={listRef125}>   <img ref={listRef15} src={line} className="stranger" /></li>
-            <li ref={listRef126}>  <img ref={listRef16} src={line} className="stranger" /></li>
-            <li ref={listRef127}>   <img ref={listRef17} src={line} className="stranger" /></li>
+            <li ref={listRef117} >  <img ref={listRef7} src={line} className="stranger" /></li>
+            <li ref={listRef118}  >   <img ref={listRef8} src={line} className="stranger" /></li>
+            <li ref={listRef119} >   <img ref={listRef9} src={line} className="stranger" /></li>
+            <li ref={listRef120} >   <img ref={listRef10} src={line} className="stranger" /></li>
+            <li ref={listRef121}  >   <img ref={listRef11} src={line} className="stranger" /></li>
+            <li ref={listRef122}  >   <img ref={listRef12} src={line} className="stranger" /></li>
+            <li ref={listRef123}  >   <img ref={listRef13} src={line} className="stranger" /></li>
+            <li ref={listRef124}  >   <img ref={listRef14} src={line} className="stranger" /></li>
+            <li ref={listRef125}  >   <img ref={listRef15} src={line} className="stranger" /></li>
+            <li ref={listRef126}  >  <img ref={listRef16} src={line} className="stranger" /></li>
+            <li ref={listRef127}  >   <img ref={listRef17} src={line} className="stranger" /></li>
           </ul>
         </div>
 
 
+
+        <div className={`act ${show && 'hidden'}`}>
+
+
+
+
+          <img style={{ width: "4%" }} src="//images.ctfassets.net/hk1y6qq9eac8/4WNMremI0RneSLlUDnlhUy/1ac9b465a652718f905bcf6fbca97c5f/mark-logo.svg"
+            alt="Greenlight Labs" />
+
+
+          <div className="flexTouch" ref={touchRef}>
+            <a aria-label="Get in Touch " className="rolling-text getInTouch" onMouseEnter={handler} onMouseLeave={nonHandler}>
+              <div className="spans">
+                <span className="block" >
+                  <span className="letter" style={{ color: "#0bd46e" }}>G</span>
+                  <span className="letter" style={{ color: "#0bd46e" }}>e</span>
+                  <span className="letter" style={{ color: "#0bd46e" }}>t</span>
+                  <span className="letter">&nbsp;</span>
+                  <span className="letter" style={{ color: "#0bd46e" }}>i</span>
+                  <span className="letter" style={{ color: "#0bd46e" }}>n</span>
+                  <span className="letter ">&nbsp;</span>
+
+                  <span className="letter" style={{ color: "#0bd46e" }}>T</span>
+                  <span className="letter" style={{ color: "#0bd46e" }}>o</span>
+                  <span className="letter" style={{ color: "#0bd46e" }}>u</span>
+                  <span className="letter" style={{ color: "#0bd46e" }}>c</span>
+                  <span className="letter" style={{ color: "#0bd46e" }}>h</span>
+
+
+                </span>
+                <span className="block" >
+                  <span className="letter">G</span>
+                  <span className="letter">e</span>
+                  <span className="letter">t</span>
+                  <span className="letter">&nbsp;</span>
+                  <span className="letter">i</span>
+                  <span className="letter">n</span>
+                  <span className="letter">&nbsp;</span>
+                  <span className="letter">T</span>
+                  <span className="letter">o</span>
+                  <span className="letter">u</span>
+                  <span className="letter">c</span>
+                  <span className="letter">h</span>
+
+
+
+
+
+
+                </span>
+              </div>
+
+            </a>
+
+
+
+            <div className="circle" onClick={toggleMenu} style={{ backgroundColor: "white" }}>
+              <span className="bl"></span>
+              <span className="bl"></span>
+              <span className="bl"></span>
+            </div>
+
+          </div>
+
+
+
+        </div>
       </div>
+
       <BlackPage ref={blackRef} />
       <TextAnime ref={textRef} />
       <Supports ref={supportRef} />
       <Partners ref={partnerRef} />
-      <Footer ref={footerRef}/>
+      <Footer ref={footerRef} />
     </>
   )
 
