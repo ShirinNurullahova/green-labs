@@ -12,23 +12,13 @@ import Supports from "../Supports/Supports";
 import Partners from "../Partners/Partners";
 import Footer from "../Footer/Footer";
 import Menu from '../HomePage/Menu/Menu';
-import { ScrollRotate } from 'react-scroll-rotate';
-
+import Sharper from '../Sharper/Sharper'
 gsap.registerPlugin(ScrollTrigger)
 
 let anna = 0
 
 const HomePage = () => {
-
-
-
-
-
-
-
-
   const [menu, setMenu] = useState(false);
-
   const toggleMenu = (e) => {
     e.preventDefault()
     if (menu) {
@@ -839,6 +829,7 @@ const HomePage = () => {
       <Supports ref={supportRef} />
       <Partners ref={partnerRef} />
       <Footer ref={footerRef} />
+         {/* <Sharper/> */}
     </>
   )
 

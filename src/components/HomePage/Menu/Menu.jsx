@@ -1,13 +1,19 @@
-import React, { useRef} from 'react';
+import React, { useRef, useState, useEffect} from 'react';
 import deleteIcon from '../../Images/delete.png'
 import '../Menu/Menu.css';
 import logoWhite from '../../Images/888.png';
 import cancelIco from '../../Images/cancel.png'
 import Title from '../../Title';
 import sampleData from '../../utils/sampleData';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { SocialIcon } from 'react-social-icons';
 const Menu = (props) => {
+
+  
+   
+ 
+
     const [activeIndex, setActiveIndex] = React.useState(-1);
 
     const boxRef = React.useRef()
@@ -24,7 +30,7 @@ const Menu = (props) => {
     const asRef2= useRef()
     const asRef3= useRef()
     const asRef4= useRef()
-
+   
    const onMHover=()=>{
     // console.log(menuYazi)
     menuYazi.current.style.display="block";
@@ -85,6 +91,7 @@ const Menu = (props) => {
         props.setMenu(false)
     }
     // console.log(props)
+    const [stil, setStil]=useState(true)
     return (
         <div >
 
@@ -106,7 +113,7 @@ const Menu = (props) => {
                                             {sampleData.map((el, index) => {
                                                 return (
                                                     <>
-                                                        <Title title={el.title} setActiveIndex={setActiveIndex} index={index} />
+                                                        <Title stil={stil} title={el.title} setActiveIndex={setActiveIndex} index={index} />
 
                                                     </>)
                                             }
@@ -125,7 +132,7 @@ const Menu = (props) => {
                                             {sampleData.map((el, index) => {
                                                 return (
                                                     <>
-                                                        <Title title={el.title} setActiveIndex={setActiveIndex} index={index} />
+                                                        <Title stil={stil} title={el.title} setActiveIndex={setActiveIndex} index={index} />
 
                                                     </>)
                                             }
@@ -147,7 +154,7 @@ const Menu = (props) => {
                                             {sampleData.map((el, index) => {
                                                 return (
                                                     <>
-                                                        <Title title={el.title} setActiveIndex={setActiveIndex} index={index} />
+                                                        <Title stil={stil} title={el.title} setActiveIndex={setActiveIndex} index={index} />
 
                                                     </>)
                                             }
@@ -167,7 +174,7 @@ const Menu = (props) => {
                                             {sampleData.map((el, index) => {
                                                 return (
                                                     <>
-                                                        <Title title={el.title} setActiveIndex={setActiveIndex} index={index} />
+                                                        <Title stil={stil} title={el.title} setActiveIndex={setActiveIndex} index={index} />
 
                                                     </>)
                                             }
@@ -186,7 +193,7 @@ const Menu = (props) => {
                                             {sampleData.map((el, index) => {
                                                 return (
                                                     <>
-                                                        <Title title={el.title} setActiveIndex={setActiveIndex} index={index} />
+                                                        <Title stil={stil} title={el.title} setActiveIndex={setActiveIndex} index={index} />
 
                                                     </>)
                                             }
