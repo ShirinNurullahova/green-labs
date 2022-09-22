@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import $ from 'jquery';
 import '../Sharper/Sharper.css';
@@ -13,13 +13,13 @@ gsap.registerPlugin(ScrollTrigger)
 
 let anna = 0
 const Sharper = () => {
-    $(document).on('mousemove', function (e) {
-        $('#sharpen').css({
-            left: e.pageX,
-            top: e.pageY
-        })
+  $(document).on('mousemove', function (e) {
+    $('#sharpen').css({
+      left: e.pageX,
+      top: e.pageY,
     })
-    const [menu, setMenu] = useState(false);
+  })
+  const [menu, setMenu] = useState(false);
 
   const toggleMenu = (e) => {
     e.preventDefault()
@@ -31,7 +31,7 @@ const Sharper = () => {
       console.log("sagol")
     }
   }
-  
+
   const [loading, setLoading] = useState(true);
   const boxRef = useRef();
   const boxRef1 = useRef();
@@ -203,7 +203,7 @@ const Sharper = () => {
         rotation: "0deg",
         delay: 0.05
       }, '<')
-      
+
 
 
     gsap.set(".ball", { xPercent: -50, yPercent: -50 });
@@ -242,7 +242,7 @@ const Sharper = () => {
     });
   });
 
- 
+
 
   if (loading) {
     return <>
@@ -250,98 +250,122 @@ const Sharper = () => {
       <img className="loadload" src={loader} />
     </>
   }
-    return (
-        <div>
+  return (
+    <div>
       <Menu menu={menu} setMenu={setMenu} />
 
-            <div>
-                <div className={`green ${menu && 'hi'}`} ref={boxRef}></div>
+      <div>
+        <div className={`green ${menu && 'hi'}`} ref={boxRef}></div>
 
-                <div className={`white ${menu && 'hii'}`} ref={boxRef1}></div>
+        <div className={`white ${menu && 'hii'}`} ref={boxRef1}></div>
 
-                <div className="ball1" ref={ballRef}></div>
-                <div className="ball" ref={refSmall}> </div>
-
-
-                <div className={`mainPage ${menu && "sjsj"}`} ref={boxRef2} >
-                    <div className="header">
-
-                        <div className="logoContainer" style={{zIndex:"1000"}} ref={logoRef} onMouseEnter={handler} onMouseLeave={nonHandler}>
-                            <img className="random" src={newlogo} />
-                            <div className="two">
-
-                                {/* <img className="logo1" src={partlogo} /> */}
-
-                            </div>
-
-                        </div>
-                        <div className="flexTouch" ref={touchRef}>
-                            <a style={{zIndex:"1000"}} aria-label="Get in Touch " className="rolling-text getInTouch" onMouseEnter={handler} onMouseLeave={nonHandler}>
-                                <div className="spans">
-                                    <span className="block" >
-                                        <span className="letter" style={{color:"white"}}>G</span>
-                                        <span className="letter"  style={{color:"white"}}>e</span>
-                                        <span className="letter"  style={{color:"white"}}>t</span>
-                                        <span className="letter">&nbsp;</span>
-                                        <span className="letter"  style={{color:"white"}}>i</span>
-                                        <span className="letter"  style={{color:"white"}}>n</span>
-                                        <span className="letter "  style={{color:"white"}}>&nbsp;</span>
-
-                                        <span className="letter"  style={{color:"white"}}>T</span>
-                                        <span className="letter"  style={{color:"white"}}>o</span>
-                                        <span className="letter"  style={{color:"white"}}>u</span>
-                                        <span className="letter"  style={{color:"white"}}>c</span>
-                                        <span className="letter"  style={{color:"white"}}>h</span>
+        <div className="ball1" ref={ballRef}></div>
+        <div className="ball" ref={refSmall}> </div>
 
 
-                                    </span>
-                                    <span className="block" >
-                                        <span className="letter">G</span>
-                                        <span className="letter">e</span>
-                                        <span className="letter">t</span>
-                                        <span className="letter">&nbsp;</span>
-                                        <span className="letter">i</span>
-                                        <span className="letter">n</span>
-                                        <span className="letter">&nbsp;</span>
-                                        <span className="letter">T</span>
-                                        <span className="letter">o</span>
-                                        <span className="letter">u</span>
-                                        <span className="letter">c</span>
-                                        <span className="letter">h</span>
-                                    </span>
-                                </div>
+        <div className={`mainPage ${menu && "sjsj"}`} ref={boxRef2} >
+          <div className="header">
 
-                            </a>
+            <div className="logoContainer" style={{ zIndex: "1000" }} ref={logoRef} onMouseEnter={handler} onMouseLeave={nonHandler}>
+              <img className="random" src={newlogo} />
+              <div className="two">
 
+                {/* <img className="logo1" src={partlogo} /> */}
 
-
-                            <div className="circle" style={{backgroundColor:"white"}} onClick={toggleMenu}>
-                                <span className="bl" style={{color:"black"}}></span>
-                                <span className="bl" style={{color:"black"}}></span>
-                                <span className="bl" style={{color:"black"}}></span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
-
-                    <div className='blurred'></div>
-                    <div className='overlay'></div>
-                    <div className='sharp' id="sharpen"></div>
-
-
-
-                    <div />
-                </div>
-
+              </div>
 
             </div>
+            <div className="flexTouch" ref={touchRef}>
+              <a style={{ zIndex: "1000" }} aria-label="Get in Touch " className="rolling-text getInTouch" onMouseEnter={handler} onMouseLeave={nonHandler}>
+                <div className="spans">
+                  <span className="block" >
+                    <span className="letter" style={{ color: "white" }}>G</span>
+                    <span className="letter" style={{ color: "white" }}>e</span>
+                    <span className="letter" style={{ color: "white" }}>t</span>
+                    <span className="letter">&nbsp;</span>
+                    <span className="letter" style={{ color: "white" }}>i</span>
+                    <span className="letter" style={{ color: "white" }}>n</span>
+                    <span className="letter " style={{ color: "white" }}>&nbsp;</span>
+
+                    <span className="letter" style={{ color: "white" }}>T</span>
+                    <span className="letter" style={{ color: "white" }}>o</span>
+                    <span className="letter" style={{ color: "white" }}>u</span>
+                    <span className="letter" style={{ color: "white" }}>c</span>
+                    <span className="letter" style={{ color: "white" }}>h</span>
+
+
+                  </span>
+                  <span className="block" >
+                    <span className="letter">G</span>
+                    <span className="letter">e</span>
+                    <span className="letter">t</span>
+                    <span className="letter">&nbsp;</span>
+                    <span className="letter">i</span>
+                    <span className="letter">n</span>
+                    <span className="letter">&nbsp;</span>
+                    <span className="letter">T</span>
+                    <span className="letter">o</span>
+                    <span className="letter">u</span>
+                    <span className="letter">c</span>
+                    <span className="letter">h</span>
+                  </span>
+                </div>
+
+              </a>
+
+
+
+              <div className="circle" style={{ backgroundColor: "white" }} onClick={toggleMenu}>
+                <span className="bl" style={{ color: "black" }}></span>
+                <span className="bl" style={{ color: "black" }}></span>
+                <span className="bl" style={{ color: "black" }}></span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div className='blurred'></div>
+          <div className='overlay'></div>
+          <div className='sharp' id="sharpen"></div>
+
+          <div className='culture'>
+            <div className='culture-reqem'>
+              <p className='reqem'>01.</p>
+            </div>
+
+            <div className='art'>
+              <p className='art-yazi'>Art Culture</p>
+              <p className='art-dubai'>Dubai Culture</p>
+            </div>
+          </div>
+
+
+
+
+
+          <div />
         </div>
 
-    )
+
+      </div>
+
+      <div className='secondPage'>
+      
+        <div className='culture'>
+          <div className='culture-reqem'>
+            <p className='reqem'>02.</p>
+          </div>
+
+          <div className='art'>
+            <p className='art-yazi'>Art and Culture</p>
+            <p className='art-dubai'>Louvre Abu Dhabi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  )
 }
 
 export default Sharper

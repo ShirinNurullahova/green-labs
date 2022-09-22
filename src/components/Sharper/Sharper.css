@@ -9,12 +9,11 @@
     align-items: center;
     background-size: cover;
     /* background-image: url("../Images/arxafon.jpeg"); */
-    background-position: center -300px;
+    /* background-position: center -300px; */
     background-color: black;
     z-index: 1;
     filter: blur(20px);
 }
-
 .overlay {
     position: fixed;
     top: 0;
@@ -23,19 +22,127 @@
     bottom: 0;
     background: rgba(0, 0, 0, 0, .6);
 }
-
 .sharp {
     position: absolute;
     z-index: 1;
     width: 400px;
     height: 400px;
     border-radius: 100%;
-    margin: -100px 0 0 -100px;
-    left: 344px;
+    margin: -270px 0 0 -200px;
+    left: 0;
     top: 0;
     background-image: url("../Images/deniz.jpeg");
+    /* background-position: fixed; */
+    background-size: cover;
+    /* background-position: center -340px; */
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 5px white, 0 0 20px rgba(0, 0, 0, 0, .2);
+}
+
+.art::before{
+        position: absolute;
+        left: -90px;
+        top: 0.6875em;
+        height: 1px;
+        width: 4.5625em;
+        background:#0bd46e;
+        content: '';
+      
+}
+.art{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 998;
+    margin-left: 10%;
+    /* margin-top: 10%; */
+}
+
+.culture{
+    display: flex;
+    margin-top: 15%;
+    position: relative;
+    justify-content: space-between;
+    height: 30vh;
+}
+.culture-reqem{
+    position: absolute;
+    z-index: 998;
+}
+.art-dubai{
+    font-size: 7.1875em;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: block;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    color: white;
+    
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+.art-yazi, .reqem{
+    font-size: 1.5em;
+    line-height: 1;
+    display: block;
+    color:white
+}
+.culture:hover .art-dubai{
+    -webkit-text-fill-color: white;
+}
+.secondPage{
+    height: 100vh;
+    background-color: black;
+    padding: 5% 8%;
+    /* background-image: url('../Images/ev.jpeg'); */
+    /* z-index: 10000; */
+}
+.blurredSecond {
+    position: fixed;
+    top: -40px;
+    left: -40px;
+    right: -40px;
+    bottom: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center -300px;
+    background-color: black;
+    z-index: 1;
+    filter: blur(20px);
+}
+.overlaySecond {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0, .6);
+}
+.sharpSecond{
+    position: fixed;
+    z-index: 1000;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    margin: -100px 0 0 -100px;
+    left: 0;
+    top: 0;
+    background-image: url("../Images/ev.jpeg");
     background-size: cover;
     background-position: center -340px;
     background-attachment: fixed;
     box-shadow: inset 0 0 0 5px white, 0 0 20px rgba(0, 0, 0, 0, .2);
+}
+.secondPage{
+    height: 100vh;
+    background-color: black;
+    padding: 0% 8%;
 }

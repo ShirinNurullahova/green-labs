@@ -7,7 +7,8 @@ import alti from '../Images/17.png'
 import yeddi from '../Images/18.png'
 import sekkiz from '../Images/19.png'
 import doqquz from '../Images/20.png'
-
+import deniz from '../Images/deniz.jpeg'
+import ev from '../Images/ev.jpeg'
 export default [{
     image : bir,
     h1:"Experience" ,

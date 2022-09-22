@@ -168,7 +168,7 @@ const TextAnime = forwardRef((props, ref) => {
                             <>
 
                                 {/* <Media1 url={el1.mediaUrl1} active1={isActive1} x1={xPos1} y1={yPos1} /> */}
-                                <Media url={el3.mediaUrl1} active={isActive3} x={xPos3} y={yPos3} />
+                                <Media url={el3.mediaUrl1} active={isActive3} x={xPos3/2} y={yPos3/2} />
                             </>)
                     }
                     )}
