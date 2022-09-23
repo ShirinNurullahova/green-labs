@@ -12,7 +12,8 @@ import Supports from "../Supports/Supports";
 import Partners from "../Partners/Partners";
 import Footer from "../Footer/Footer";
 import Menu from '../HomePage/Menu/Menu';
-import Sharper from '../Sharper/Sharper'
+import Sharper from '../Sharper/Sharper';
+import yasil from '../Images/yasil.png'
 gsap.registerPlugin(ScrollTrigger)
 
 let anna = 0
@@ -603,12 +604,8 @@ const HomePage = () => {
           <div className="header">
 
             <div className="logoContainer" ref={logoRef} onMouseEnter={handler} onMouseLeave={nonHandler}>
-              <img className="random" src={random} />
-              <div className="two">
-
-                <img className="logo1" src={partlogo} />
-
-              </div>
+              <img className="random" src={yasil} />
+             
 
             </div>
             <div className="flexTouch" ref={touchRef}>

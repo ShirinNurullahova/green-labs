@@ -208,7 +208,7 @@ const Menu = (props) => {
                     <div className='rightAside'>
                         <p className='adress'>Adress:</p>
                         <div className='floor' >
-                            <img style={{ width: "5%", marginRight: "10%" }} src="//images.ctfassets.net/hk1y6qq9eac8/5XDwFgDbkRbTuiIXkY8S7i/522c30c35f39d8879fff0c07d0c2efa5/dubai-icon.svg" alt="undefined" class="img-fluid" />
+                            <img style={{ width: "5%", marginRight: "10%" }} src="//images.ctfassets.net/hk1y6qq9eac8/5XDwFgDbkRbTuiIXkY8S7i/522c30c35f39d8879fff0c07d0c2efa5/dubai-icon.svg" alt="undefined" />
                             <div style={{ display: "flex", flexDirection: "column" }}>
                                 <p className='officeO'>
                                     Office 2205, Floor 22, Mazaya Business Avenue, Tower AA1, Jumeirah Lake Towers, Dubai. UAE
@@ -221,7 +221,7 @@ const Menu = (props) => {
                         </div>
 
                         <div className='floor'>
-                            <img style={{ width: "7%", marginRight: "10%" }} src="//images.ctfassets.net/hk1y6qq9eac8/1ntpvyIrwlPaiwpZ2jYKCR/1330d15c87c8621a76ffcc78e57cd1fb/karachi-icon.svg" alt="undefined" class="img-fluid" />
+                            <img style={{ width: "7%", marginRight: "10%" }} src="//images.ctfassets.net/hk1y6qq9eac8/1ntpvyIrwlPaiwpZ2jYKCR/1330d15c87c8621a76ffcc78e57cd1fb/karachi-icon.svg" alt="undefined"  />
                             <div style={{ display: "flex", flexDirection: "column" }}>
                                 <p className='officeO'>
                                     Office 2205, Floor 22, Mazaya Business Avenue, Tower AA1, Jumeirah Lake Towers, Dubai. UAE

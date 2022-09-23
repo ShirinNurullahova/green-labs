@@ -1,7 +1,7 @@
 .footerEsas::before{
     position: absolute;
     left: 0;
-    top:100%;
+    top:0;
     width: 70%;
     height: 0.3125em;
     background: #0bd46e;
@@ -10,4 +10,113 @@
 .footerEsas{
     position: relative;
    display: none;
+}
+.connect{
+    font-size: 9em;
+    color: black;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-transform: uppercase;
+    font-weight: 900;
+    color:black;
+    margin-right: 10%;
+}
+.footer-up{
+    display: flex;
+  margin-left: 20%;
+  padding-top: 5%;
+  width: 100%;
+}
+.icon-linkedin{
+    width: 2.25em;
+    height: 2.25em;
+    text-align: center;
+    margin: 0 0.9375em 0 0;
+    background: black;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #fff;
+}
+.icon-linkedin::before{
+    font-size: 1.125em;
+}
+
+.icon-linkedin:before {
+    content: "in";
+}
+#ftline{
+    height: 0.1875em;
+    border: none;
+    background: #f2f2f2;
+    width: 90%;
+    color: gray;
+}
+.contact-span{
+    display: block;
+    width: 0.75em;
+    height: 0.75em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 0 1.25em 0;
+    background-color: #0bd46e;
+}
+.basliq{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: stretch;
+    margin: 0 0 3.125em 0;
+}
+.contact-adress{
+    margin: 0 0 1.25em 0;
+    letter-spacing: .03125em;
+    line-height: 1.125em;
+    font-weight: 500;
+    font-size: 1.875em;
+}
+.contact-text{
+    width: 70%;
+}
+#nomre{
+    margin-top: 10%;
+}
+.footer-contact{
+    margin: 0 auto 6.25em 20%;
+     /* display: flex; */
+}
+.contact-1{
+    margin-top: 70px;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+.son{
+    display: flex;
+   justify-content: space-between;
+    margin: 0 5% 5% 20%
+}
+.toplu{
+    display: block;
+    width: auto;
+    height: 8.75em;
+    /* margin: auto; */
+}
+.labor{
+    font-size: 1.375em;
+    font-weight: 500;
+    margin: 0;
 }
