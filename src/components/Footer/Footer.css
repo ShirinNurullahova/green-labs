@@ -96,7 +96,7 @@
     margin-top: 10%;
 }
 .footer-contact{
-    margin: 0 auto 6.25em 20%;
+    margin: 0 auto 6.25em 25%;
      /* display: flex; */
 }
 .contact-1{
@@ -119,4 +119,22 @@
     font-size: 1.375em;
     font-weight: 500;
     margin: 0;
+}
+.brand-side-logo {
+    position: absolute;
+    left: 3%;
+    top: 15.625em;
+    margin: auto;
+    width: 15.5em;
+    height: 41.5625em;
+    vertical-align: top;
+}
+.brand-side-logo svg {
+    height: 100%;
+    width: 70%;
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
 }
