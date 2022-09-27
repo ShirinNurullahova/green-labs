@@ -1,0 +1,59 @@
+/* .submit .green{
+    height: 100vh;
+}
+/* .submit .white{
+    height: 100vh;
+} */ 
+.qaradi{
+    background-color: black;
+    z-index: 999;
+
+    height: 100vh;
+}
+.submit .green{
+    position: absolute;
+    bottom:0;
+    left:0;
+    z-index: 1;
+} 
+.clos {
+    position: absolute;
+    right: 0.625em;
+    top: 0.625em;
+    background: #0bd46e;
+    color: #fff;
+    width: 5.25em;
+    height: 5.25em;
+    opacity: 1;
+    font-size: 1em;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 999;
+    border-radius: 12.5em
+}
+.clos:hover{
+    background: white;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+#bl{
+    background-color: #fff;
+}
+.clos:hover #bl{
+    background: #0bd46e;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
