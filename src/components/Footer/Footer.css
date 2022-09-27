@@ -10,7 +10,9 @@
 .footerEsas{
     position: relative;
    display: none;
+   overflow: hidden;
 }
+
 .connect{
     font-size: 9em;
     color: black;

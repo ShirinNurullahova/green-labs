@@ -7,6 +7,7 @@ import {
   Route,
   Routes
 } from "react-router-dom"; 
+import Submit from './components/Submit/Submit';
 
 
 function App() {
@@ -17,8 +18,10 @@ function App() {
 <Router>
 
 <Routes>
-  <Route exact path="/" element={<HomePage />} />
+  <Route exact path="/" element={<HomePage /> } />
    <Route exact path="/sharp" element={<Sharper />} /> 
+   <Route exact path="/submit" element={<Submit />} /> 
+
 </Routes>
 </Router>
   

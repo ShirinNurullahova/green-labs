@@ -67,7 +67,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 1000;
     /* border: 3px solid #0bd46e; */
     background-color: #0bd46e;
     opacity: 0.2;
@@ -85,7 +85,7 @@
     left: 0;
     border-radius: 50%;
     pointer-events: none;
-    z-index: 999;
+    z-index: 1000;
     background-color: #0bd46e;
 }
 
