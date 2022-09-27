@@ -1,7 +1,6 @@
 import React, { forwardRef, useRef } from 'react'
 import '../Footer/Footer.css';
-import Drag from './Drag/Drag';
-import Main from './Main/Main';
+
 const Footer = forwardRef((props, ref) => {
   const touchRef = useRef()
 
@@ -21,7 +20,6 @@ const Footer = forwardRef((props, ref) => {
         </div>
       <div className='footer-up'>
         <div className='connect'>CONNECT</div>
-        <Main/>
         <div>
           <div className="flexTouch" ref={touchRef}>
             <i className='icon-linkedin'></i>
