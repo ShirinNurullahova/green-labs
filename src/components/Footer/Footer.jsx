@@ -1,9 +1,17 @@
-import React, { forwardRef, useRef } from 'react'
+import React, { forwardRef, useRef, useState, useEffect } from 'react'
 import '../Footer/Footer.css';
+import drag from '../Images/drag.svg';
+
+
+    
+
 
 const Footer = forwardRef((props, ref) => {
-  const touchRef = useRef()
 
+
+  const touchRef = useRef()
+ 
+ 
   return (
     <div className='footerEsas' ref={ref}>
       <div class="brand-side-logo">
@@ -19,7 +27,13 @@ const Footer = forwardRef((props, ref) => {
             </svg>
         </div>
       <div className='footer-up'>
-        <div className='connect'>CONNECT</div>
+        <div className='connect'>CONNECT
+        <img src={drag} className='dragg' />
+        </div>
+      
+    
+       
+       
         <div>
           <div className="flexTouch" ref={touchRef}>
             <i className='icon-linkedin'></i>

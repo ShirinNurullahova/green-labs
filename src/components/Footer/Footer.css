@@ -1,19 +1,69 @@
-.footerEsas::before{
+.footerEsas::before {
     position: absolute;
     left: 0;
-    top:0;
+    top: 0;
     width: 70%;
     height: 0.3125em;
     background: #0bd46e;
     content: '';
 }
-.footerEsas{
+
+.footerEsas {
     position: relative;
-   display: none;
-   overflow: hidden;
+    display: none;
+    overflow: hidden;
 }
 
-.connect{
+.dragg {
+    width: 15%;
+    /* position: absolute; */
+  
+    cursor: move;
+
+}
+.dragg {
+
+     position: absolute;
+    
+     animation: animationFramestwo 4s infinite;
+     animation-iteration-count: infinite;
+     animation-direction: reverse;
+     /* transform-origin: 50% 50%; */
+     -webkit-animation: animationFramestwo ease 4s;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-direction: reverse;
+     /* -webkit-transform-origin: 50% 50%; */
+     -moz-animation: animationFramestwo ease 4s;
+     -moz-animation-iteration-count: infinite;
+     -moz-animation-direction: reverse;
+     /* -moz-transform-origin: 50% 50%; */
+     -o-animation: animationFramestwo ease 4s;
+     -o-animation-iteration-count: infinite;
+     -o-animation-direction: reverse;
+     /* -o-transform-origin: 50% 50%; */
+     -ms-animation: animationFramestwo ease 4s;
+     -ms-animation-iteration-count: infinite;
+     -ms-animation-direction: reverse;
+     /* -ms-transform-origin: 50% 50%; */
+ }
+ 
+ @keyframes animationFramestwo {
+ 
+     0%,
+     100% {
+       right: 400px;
+     }
+ 
+     50% {
+         right: 800px;
+     }
+ }
+ .dragg:hover {
+  animation-play-state: paused;
+
+}
+
+.connect {
     font-size: 9em;
     color: black;
     -webkit-text-fill-color: #fff;
@@ -21,16 +71,18 @@
     -webkit-text-stroke-color: black;
     text-transform: uppercase;
     font-weight: 900;
-    color:black;
+    color: black;
     margin-right: 10%;
 }
-.footer-up{
+
+.footer-up {
     display: flex;
-  margin-left: 20%;
-  padding-top: 5%;
-  width: 100%;
+    margin-left: 20%;
+    padding-top: 5%;
+    width: 100%;
 }
-.icon-linkedin{
+
+.icon-linkedin {
     width: 2.25em;
     height: 2.25em;
     text-align: center;
@@ -49,21 +101,24 @@
     align-content: center;
     color: #fff;
 }
-.icon-linkedin::before{
+
+.icon-linkedin::before {
     font-size: 1.125em;
 }
 
 .icon-linkedin:before {
     content: "in";
 }
-#ftline{
+
+#ftline {
     height: 0.1875em;
     border: none;
     background: #f2f2f2;
     width: 90%;
     color: gray;
 }
-.contact-span{
+
+.contact-span {
     display: block;
     width: 0.75em;
     height: 0.75em;
@@ -75,7 +130,8 @@
     margin: 0 0 1.25em 0;
     background-color: #0bd46e;
 }
-.basliq{
+
+.basliq {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -84,44 +140,53 @@
     align-content: stretch;
     margin: 0 0 3.125em 0;
 }
-.contact-adress{
+
+.contact-adress {
     margin: 0 0 1.25em 0;
     letter-spacing: .03125em;
     line-height: 1.125em;
     font-weight: 500;
     font-size: 1.875em;
 }
-.contact-text{
+
+.contact-text {
     width: 70%;
 }
-#nomre{
+
+#nomre {
     margin-top: 10%;
 }
-.footer-contact{
+
+.footer-contact {
     margin: 0 auto 6.25em 25%;
-     /* display: flex; */
+    /* display: flex; */
 }
-.contact-1{
+
+.contact-1 {
     margin-top: 70px;
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
 }
-.son{
+
+.son {
     display: flex;
-   justify-content: space-between;
+    justify-content: space-between;
     margin: 0 5% 5% 20%
 }
-.toplu{
+
+.toplu {
     display: block;
     width: auto;
     height: 8.75em;
     /* margin: auto; */
 }
-.labor{
+
+.labor {
     font-size: 1.375em;
     font-weight: 500;
     margin: 0;
 }
+
 .brand-side-logo {
     position: absolute;
     left: 3%;
@@ -131,6 +196,7 @@
     height: 41.5625em;
     vertical-align: top;
 }
+
 .brand-side-logo svg {
     height: 100%;
     width: 70%;

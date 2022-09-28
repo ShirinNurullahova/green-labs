@@ -15,7 +15,8 @@ export default [{
     p:"Design",
     l1:"User Interface Design",
     l2:"User Experience Design",
-    l3:"Animation Design"
+    l3:"Animation Design",
+    l4:"Animation Design",
 },
 {
     image : iki ,

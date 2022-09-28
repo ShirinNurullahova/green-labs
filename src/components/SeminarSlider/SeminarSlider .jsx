@@ -21,10 +21,8 @@ const SeminarSlider = () => {
   };
   // onScrollHandler to change the value of the input range
   const onScrollHandler = (event) => {
-    // console.log(event +"salanmm")
     const container = innerContainer.current;
     const input = inputRangeRef.current;
-    // console.log(input)
     var b = container.scrollWidth - container.clientWidth;
     input.setAttribute("max", b);
     var a = container.scrollLeft;
@@ -58,7 +56,7 @@ const SeminarSlider = () => {
                           <ul>
                             <li className="point">{el.l1}</li>
                             <li className="point">{el.l2}</li>
-                            <li className="point">{el.l2}</li>
+                            <li className="point">{el.l3}</li>
                           </ul>
 
                         </div>
