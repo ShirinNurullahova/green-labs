@@ -9,16 +9,47 @@ import random from "../Images/randomm.svg";
 import partlogo from "../Images/tc-top-logo.svg";
 import { gsap } from "gsap";
 import Menu from '../HomePage/Menu/Menu'
+import Footer from '../Footer/Footer';
 gsap.registerPlugin(ScrollTrigger)
 
 let anna = 0
 const Sharper = () => {
+  const footerRef = useRef();
   $(document).on('mousemove', function (e) {
     $('#sharpen').css({
       left: e.pageX,
       top: e.pageY,
     })
   })
+
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $('#sharpen').addClass('dimBackground')
+
+      }
+      if ($(this).scrollTop() < 300) {
+        $('#sharpen').removeClass('dimBackground')
+      }
+      if ($(this).scrollTop() > 1000) {
+        $('#sharpen').addClass('dimBackground1')
+
+      }
+      if ($(this).scrollTop() < 1000) {
+        $('#sharpen').removeClass('dimBackground1')
+
+      }
+      if ($(this).scrollTop() > 1700) {
+        $('#sharpen').addClass('dimBackground2')
+
+      }
+      if ($(this).scrollTop() < 1700) {
+        $('#sharpen').removeClass('dimBackground2')
+
+      }
+    });
+  });
+
   const [menu, setMenu] = useState(false);
 
   const toggleMenu = (e) => {
@@ -89,6 +120,8 @@ const Sharper = () => {
     tl.to(boxRef.current, { height: "100vh ", duration: 1.5 }, ">")
       .to(boxRef1.current, { height: "100vh ", duration: 1.5 }, ">")
       .to(boxRef2.current, { display: "block", duration: 1.5 }, ">")
+      .to(footerRef.current, { display: "block", duration: 1.5 }, "<")
+
       .fromTo(one.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
         y: "0%",
         autoAlpha: 1,
@@ -251,10 +284,11 @@ const Sharper = () => {
     </>
   }
   return (
+    <>
     <div>
       <Menu menu={menu} setMenu={setMenu} />
 
-      <div className='sharp-circle'>
+      <div className='sharp-circle' id='sharp-circle'>
         <div className={`green ${menu && 'hi'}`} ref={boxRef}></div>
 
         <div className={`white ${menu && 'hii'}`} ref={boxRef1}></div>
@@ -329,7 +363,7 @@ const Sharper = () => {
           <div className='overlay'></div>
           <div className='sharp' id="sharpen"></div>
 
-          <div className='culture'>
+          <div className='culture' >
             <div className='culture-reqem'>
               <p className='reqem'>01.</p>
             </div>
@@ -341,30 +375,50 @@ const Sharper = () => {
           </div>
 
 
+          <div className='culture' id='ikinci'>
+            <div className='culture-reqem'>
+              <p className='reqem'>02.</p>
+            </div>
 
+            <div className='art' id='art'>
+              <p className='art-yazi'>Art and Culture</p>
+              <p className='art-dubai'>Louvre Abu Dhabi</p>
+            </div>
+          </div>
 
+          <div className='culture' id='ikinci'>
+            <div className='culture-reqem'>
+              <p className='reqem'>03.</p>
+            </div>
+
+            <div className='art' id='art'>
+              <p className='art-yazi'>Finance</p>
+              <p className='art-dubai'>AL-ETIHAD CREDIT BUREAU</p>
+            </div>
+          </div>
+
+          <div className='culture' id='ikinci'>
+            <div className='culture-reqem'>
+              <p className='reqem'>04.</p>
+            </div>
+
+            <div className='art' id='art'>
+              <p className='art-yazi'>Automotive</p>
+              <p className='art-dubai'>HONDA MIDDLE EAST</p>
+            </div>
+          </div>
 
           <div />
         </div>
 
 
+
       </div>
 
-      <div className='secondPage'>
-      
-        <div className='culture'>
-          <div className='culture-reqem'>
-            <p className='reqem'>02.</p>
-          </div>
 
-          <div className='art'>
-            <p className='art-yazi'>Art and Culture</p>
-            <p className='art-dubai'>Louvre Abu Dhabi</p>
-          </div>
-        </div>
-      </div>
     </div>
-
+      {/* <Footer ref={footerRef} /> */}
+     </>
   )
 }
 

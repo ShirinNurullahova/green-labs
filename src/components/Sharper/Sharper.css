@@ -38,7 +38,30 @@
     background-attachment: fixed;
     box-shadow: inset 0 0 0 5px white, 0 0 20px rgba(0, 0, 0, 0, .2);
 }
-
+.dimBackground{
+    background-image: url("../Images/pexels.jpg");
+    position: absolute;
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+}
+.dimBackground1{
+    background-image: url("../Images/okean.webp");
+    position: absolute;
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+}
+.dimBackground2{
+    background-image: url("../Images/porsche.jpeg");
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+#ikinci{
+ margin-top: 30%;
+}
 .art::before{
         position: absolute;
         left: -90px;
@@ -84,7 +107,7 @@
     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     color: white;
-    
+    text-align: left;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
@@ -113,7 +136,7 @@
     background-color: black;
     padding: 5% 8%;
     /* background-image: url('../Images/ev.jpeg'); */
-    z-index: 990;
+    z-index: 1000;
 
 }
 .blurredSecond {
