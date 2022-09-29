@@ -808,7 +808,7 @@ const HomePage = () => {
 
 
 
-            <div className="circle" onClick={toggleMenu} style={{ backgroundColor: "white" }}>
+            <div className="circle" onClick={toggleMenu} id='baby-shark'>
               <span className="bl"></span>
               <span className="bl"></span>
               <span className="bl"></span>

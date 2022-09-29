@@ -76,7 +76,9 @@
     transition: 0.1s;
     transform: translate(-50%, -50%);
 }
-
+#baby-shark{
+    background-color: white;
+}
 .ball {
     width: 8px;
     height: 8px;

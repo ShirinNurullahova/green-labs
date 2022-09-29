@@ -254,7 +254,7 @@ const Sharper = () => {
     <div>
       <Menu menu={menu} setMenu={setMenu} />
 
-      <div>
+      <div className='sharp-circle'>
         <div className={`green ${menu && 'hi'}`} ref={boxRef}></div>
 
         <div className={`white ${menu && 'hii'}`} ref={boxRef1}></div>
@@ -315,7 +315,7 @@ const Sharper = () => {
 
 
 
-              <div className="circle" style={{ backgroundColor: "white" }} onClick={toggleMenu}>
+              <div className="circle" id="sharp-part-circle" onClick={toggleMenu}>
                 <span className="bl" style={{ color: "black" }}></span>
                 <span className="bl" style={{ color: "black" }}></span>
                 <span className="bl" style={{ color: "black" }}></span>

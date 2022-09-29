@@ -55,12 +55,11 @@
      }
  
      50% {
-         right: 800px;
+         right: 500px;
      }
  }
  .dragg:hover {
   animation-play-state: paused;
-
 }
 
 .connect {

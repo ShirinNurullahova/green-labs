@@ -31,7 +31,7 @@
     margin: -270px 0 0 -200px;
     left: 0;
     top: 0;
-    background-image: url("../Images/deniz.jpeg");
+    background-image: url("../Images/two.jpg");
     /* background-position: fixed; */
     background-size: cover;
     /* background-position: center -340px; */
@@ -58,6 +58,7 @@
     z-index: 998;
     margin-left: 10%;
     /* margin-top: 10%; */
+   
 }
 
 .culture{
@@ -66,6 +67,7 @@
     position: relative;
     justify-content: space-between;
     height: 30vh;
+    z-index: 1;
 }
 .culture-reqem{
     position: absolute;
@@ -93,6 +95,16 @@
     display: block;
     color:white
 }
+.sharp-circle .mainPage .header .flexTouch .circle:hover .bl{
+    color:black !important
+}
+#sharp-part-circle{
+    background-color: white;
+}
+#sharp-part-circle:hover .bl{
+   background-color: black;
+   border: none;
+}
 .culture:hover .art-dubai{
     -webkit-text-fill-color: white;
 }
@@ -101,7 +113,8 @@
     background-color: black;
     padding: 5% 8%;
     /* background-image: url('../Images/ev.jpeg'); */
-    /* z-index: 10000; */
+    z-index: 990;
+
 }
 .blurredSecond {
     position: fixed;
@@ -135,7 +148,7 @@
     margin: -100px 0 0 -100px;
     left: 0;
     top: 0;
-    background-image: url("../Images/ev.jpeg");
+    background-image: url("../Images/two.jpg");
     background-size: cover;
     background-position: center -340px;
     background-attachment: fixed;
