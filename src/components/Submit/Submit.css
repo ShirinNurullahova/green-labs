@@ -1,9 +1,4 @@
-/* .submit .green{
-    height: 100vh;
-}
-/* .submit .white{
-    height: 100vh;
-} */ 
+
 .qaradi{
     background-color: black;
     z-index: 999;
@@ -22,8 +17,8 @@
     top: 0.625em;
     background: #0bd46e;
     color: #fff;
-    width: 5.25em;
-    height: 5.25em;
+    width: 4.25em;
+    height: 4.25em;
     opacity: 1;
     font-size: 1em;
     -webkit-transition: all .5s ease-in-out;
@@ -56,4 +51,18 @@
     -moz-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
+}
+.letsCreate{
+    text-align: left;
+    z-index: 999;
+    color:white;
+    position: absolute;
+    top:0;
+    left:0;
+    margin: 0 0 0.625em 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3.125em;
+    width: 70%;
+    margin: 5% 0 0 8%;
 }

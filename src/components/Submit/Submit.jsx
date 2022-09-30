@@ -80,10 +80,10 @@ const Submit = () => {
                     </div>
                 </div>
 
-
                 <div className='letsCreate'>
-                     <h1>LET`S CREATE SOMETHING AWESOME!</h1>
+                    LET`S CREATE SOMETHING AWESOME!
                 </div>
+
 
 
             </div>
