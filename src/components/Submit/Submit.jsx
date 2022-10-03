@@ -24,7 +24,7 @@ const Submit = () => {
         // console.log("salam")
 
         tl
-            .fromTo(boxRef.current, { height: "100vh", duration: 10 }, {
+            .fromTo(boxRef.current, { height: "130vh", duration: 10 }, {
                 height: "0vh",
                 delay: 0.5,
             }, '>')
@@ -81,11 +81,40 @@ const Submit = () => {
                 </div>
 
                 <div className='letsCreate'>
-                    LET`S CREATE SOMETHING AWESOME!
+                    LET`S CREATE SOMETHING <p className='dif'>AWESOME!</p>
                 </div>
 
+                <div className='input-part'>
+                    <div className='label-name'>My Name</div>
+                    <div>
+                        <input className='submit-name' type='text' placeholder="Enter your full name"></input>
+                    </div>
+                </div>
+                <div className='input-part-2'>
+                    <div className='label-name'>My Email</div>
+                    <div>
+                        <input className='submit-name' type='text' placeholder="Enter your email"></input>
+                    </div>
+                </div>
+                <div className='input-part-3'>
+                    <div className='label-name'>Looking for</div>
+                    <div>
+                        <input className='submit-name' type='text' placeholder="Strategy and Design"></input>
+                    </div>
+                </div>
+                <div className='two' >
+                    <div className='input-part-4'>
+                        <div className='label-name-end'>Comment</div>
+                        <div>
+                            <input className='submit-name' type='text' placeholder="if any"></input>
+                        </div>
+                    </div>
 
-
+                    <button className='green-submit'>
+                        <span>Submit</span>
+                        <p className='wow'>Enter the wow factor:)</p>
+                        </button>
+                </div>
             </div>
         </>
     )
