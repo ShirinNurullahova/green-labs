@@ -2,7 +2,7 @@ import React, { forwardRef, useRef, useState, useEffect } from 'react'
 import '../Footer/Footer.css';
 import drag from '../Images/drag.svg';
 import Draggable, { DraggableCore } from "react-draggable";
-
+import { Link } from 'react-router-dom';
 const Footer = forwardRef((props, ref) => {
 
   const touchRef = useRef()
@@ -23,52 +23,49 @@ const Footer = forwardRef((props, ref) => {
       </div>
       <div className='footer-up'>
         <div className='connect'>CONNECT
-        <Draggable axis="x" > 
-   
-        <img src={drag} className='dragg' />
-       </Draggable>
+          <Draggable axis="x" >
 
-    
+            <img src={drag} className='dragg' />
+          </Draggable>
+
+
         </div>
 
 
 
 
-        <div>
+        <Link to='/submit'>
           <div className="flexTouch" ref={touchRef}>
             <i className='icon-linkedin'></i>
             <a aria-label="Get in Touch " className="rolling-text getInTouch">
               <div className="spans">
                 <span className="block" >
-                  <span className="letter" style={{ color: "#0bd46e" }}>G</span>
-                  <span className="letter" style={{ color: "#0bd46e" }}>e</span>
-                  <span className="letter" style={{ color: "#0bd46e" }}>t</span>
-                  <span className="letter">&nbsp;</span>
-                  <span className="letter" style={{ color: "#0bd46e" }}>i</span>
-                  <span className="letter" style={{ color: "#0bd46e" }}>n</span>
-                  <span className="letter ">&nbsp;</span>
-
-                  <span className="letter" style={{ color: "#0bd46e" }}>T</span>
-                  <span className="letter" style={{ color: "#0bd46e" }}>o</span>
+                  <span className="letter" style={{ color: "#0bd46e" }}>S</span>
                   <span className="letter" style={{ color: "#0bd46e" }}>u</span>
-                  <span className="letter" style={{ color: "#0bd46e" }}>c</span>
-                  <span className="letter" style={{ color: "#0bd46e" }}>h</span>
+                  <span className="letter" style={{ color: "#0bd46e" }}>b</span>
+                  {/* <span className="letter">&nbsp;</span> */}
+                  <span className="letter" style={{ color: "#0bd46e" }}>m</span>
+                  <span className="letter" style={{ color: "#0bd46e" }}>i</span>
+                  {/* <span className="letter ">&nbsp;</span> */}
+
+                  <span className="letter" style={{ color: "#0bd46e" }}>t</span>
+
 
 
                 </span>
                 <span className="block" >
-                  <span className="letter" style={{ color: 'black' }}>G</span>
-                  <span className="letter" style={{ color: 'black' }}>e</span>
-                  <span className="letter" style={{ color: 'black' }}>t</span>
-                  <span className="letter">&nbsp;</span>
+                  <span className="letter" style={{ color: 'black' }}>S</span>
+                  <span className="letter" style={{ color: 'black' }}>u</span>
+                  <span className="letter" style={{ color: 'black' }}>b</span>
+                  {/* <span className="letter">&nbsp;</span> */}
+                  <span className="letter" style={{ color: 'black' }}>m</span>
                   <span className="letter" style={{ color: 'black' }}>i</span>
-                  <span className="letter" style={{ color: 'black' }}>n</span>
-                  <span className="letter">&nbsp;</span>
-                  <span className="letter" style={{ color: 'black' }}>T</span>
-                  <span className="letter" style={{ color: 'black' }}>o</span>
+                  {/* <span className="letter">&nbsp;</span> */}
+                  <span className="letter" style={{ color: 'black' }}>t</span>
+                  {/* <span className="letter" style={{ color: 'black' }}>o</span>
                   <span className="letter" style={{ color: 'black' }}>u</span>
                   <span className="letter" style={{ color: 'black' }}>c</span>
-                  <span className="letter" style={{ color: 'black' }}>h</span>
+                  <span className="letter" style={{ color: 'black' }}>h</span> */}
 
                 </span>
               </div>
@@ -76,7 +73,7 @@ const Footer = forwardRef((props, ref) => {
             </a>
 
           </div>
-        </div>
+        </Link>
 
 
       </div>

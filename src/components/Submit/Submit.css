@@ -4,7 +4,9 @@
 
     height: 130vh;
 }
-
+.createDiv{
+    display: none;
+}
 .submit .green {
     position: absolute;
     bottom: 0;
