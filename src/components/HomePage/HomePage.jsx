@@ -378,22 +378,24 @@ const HomePage = () => {
       .to(listRef15.current, { transform: "translate(0px,  57.6471%)" }, "<")
       .to(listRef16.current, { transform: "translate(0px,  61.7647%)" }, "<")
       .to(listRef17.current, { transform: "translate(0px,  65.8824%)" }, "<")
+
       // .to(digitRef.current, {
-      //   rotateY: "-3.142rad", scrollTrigger: {
+      //   transform:'rotate3d(1, 1, 1, 45deg)', scrollTrigger: {
       //     trigger: digitRef.current,
       //     // markers :true,
       //     scrub: true
       //   }
       // }, "<")
-      .to(ulRef.current, {
-        scrollTrigger: {
-          trigger: ulRef.current,
-          // markers :true,
-          scrub: true
-        }
-      }, "<")
+      // .to(ulRef.current, {
+      //   rotateY: "0.142rad",
+      //   scrollTrigger: {
+      //     trigger: ulRef.current,
+      //     // markers :true,
+      //     scrub: true
+      //   }
+      // }, "<")
       .to(listRef111.current, {
-        rotateY: "3.142rad", scrollTrigger: {
+        rotateY: "2.142rad", scrollTrigger: {
           trigger: listRef111.current,
           // markers :true,
           scrub: true
@@ -413,112 +415,112 @@ const HomePage = () => {
       //   },
       // }, '<')
       .to(listRef112.current, {
-        rotateY: "3.142rad", scrollTrigger: {
+        rotateY: "2.142rad", scrollTrigger: {
           trigger: listRef112.current,
           // markers :true,
           scrub: true
         }
       }, "<")
       .to(listRef113.current, {
-        rotateY: "3.142rad", scrollTrigger: {
+        rotateY: "2.142rad", scrollTrigger: {
           trigger: listRef113.current,
           // markers :true,
           scrub: true
         }
       }, "<")
       .to(listRef114.current, {
-        rotateY: "3.142rad", scrollTrigger: {
+        rotateY: "2.142rad", scrollTrigger: {
           trigger: listRef114.current,
           // markers :true,
           scrub: true
         }
       }, "<")
       .to(listRef115.current, {
-        rotateY: "3.142rad", scrollTrigger: {
+        rotateY: "2.142rad", scrollTrigger: {
           trigger: listRef115.current,
           // markers :true,
           scrub: true
         }
       }, "<")
       .to(listRef116.current, {
-        rotateY: "3.142rad", scrollTrigger: {
+        rotateY: "2.142rad", scrollTrigger: {
           trigger: listRef116.current,
           // markers :true,
           scrub: true
         }
       }, "<")
       .to(listRef117.current, {
-        rotateY: "3.142rad", scrollTrigger: {
+        rotateY: "2.142rad", scrollTrigger: {
           trigger: listRef117.current,
           // markers :true,
           scrub: true
         }
       }, "<")
       .to(listRef118.current, {
-        rotateY: "3.142rad", scrollTrigger: {
+        rotateY: "2.142rad", scrollTrigger: {
           trigger: listRef118.current,
           // markers :true,
           scrub: true
         }
       }, "<")
       .to(listRef119.current, {
-        rotateY: "3.142rad", scrollTrigger: {
+        rotateY: "2.142rad", scrollTrigger: {
           trigger: listRef119.current,
           // markers :true,
           scrub: true
         }
       }, "<")
       .to(listRef120.current, {
-        rotateY: "3.142rad", scrollTrigger: {
+        rotateY: "2.142rad", scrollTrigger: {
           trigger: listRef120.current,
           // markers :true,
           scrub: true
         }
       }, "<")
       .to(listRef121.current, {
-        rotateY: "3.142rad", scrollTrigger: {
+        rotateY: "2.142rad", scrollTrigger: {
           trigger: listRef121.current,
           // markers :true,
           scrub: true
         }
       }, "<")
       .to(listRef122.current, {
-        rotateY: "3.142rad", scrollTrigger: {
+        rotateY: "2.142rad", scrollTrigger: {
           trigger: listRef122.current,
           // markers :true,
           scrub: true
         }
       }, "<")
       .to(listRef123.current, {
-        rotateY: "3.142rad", scrollTrigger: {
+        rotateY: "2.142rad", scrollTrigger: {
           trigger: listRef123.current,
           // markers :true,
           scrub: true
         }
       }, "<")
       .to(listRef124.current, {
-        rotateY: "3.142rad", scrollTrigger: {
+        rotateY: "2.142rad", scrollTrigger: {
           trigger: listRef124.current,
           // markers :true,
           scrub: true
         }
       }, "<")
       .to(listRef125.current, {
-        rotateY: "3.142rad", scrollTrigger: {
+        rotateY: "2.142rad", scrollTrigger: {
           trigger: listRef125.current,
           // markers :true,
           scrub: true
         }
       }, "<")
       .to(listRef126.current, {
-        rotateY: "3.142rad", scrollTrigger: {
+        rotateY: "2.142rad", scrollTrigger: {
           trigger: listRef126.current,
           // markers :true,
           scrub: true
         }
       }, "<")
       .to(listRef127.current, {
-        rotateY: "3.142rad", scrollTrigger: {
+        rotateY: "2.142rad", scrollTrigger: {
           trigger: listRef127.current,
           // markers :true,
           scrub: true
@@ -588,7 +590,7 @@ const HomePage = () => {
 
 
   return (
-    <>
+    <div className="home-home">
       <Menu menu={menu} setMenu={setMenu} />
 
       <div>
@@ -827,7 +829,7 @@ const HomePage = () => {
       <Partners ref={partnerRef} />
       <Footer ref={footerRef} />
          {/* <Sharper/> */}
-    </>
+    </div>
   )
 
 }
