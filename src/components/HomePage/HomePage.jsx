@@ -380,7 +380,7 @@ const HomePage = () => {
       .to(listRef17.current, { transform: "translate(0px,  65.8824%)" }, "<")
 
       // .to(digitRef.current, {
-      //   transform:'rotate3d(1, 1, 1, 45deg)', scrollTrigger: {
+      //   transform:'rotate3d(1, 1, 1, -45deg)', scrollTrigger: {
       //     trigger: digitRef.current,
       //     // markers :true,
       //     scrub: true

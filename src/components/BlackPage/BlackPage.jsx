@@ -161,7 +161,7 @@ const BlackPage = forwardRef((props, ref) => {
         },
       }, '<')
       .from(officeRef.current, {
-        x: 200,
+        x: -200,
         opacity: 0,
         stagger: 0.3,
         scrollTrigger: {

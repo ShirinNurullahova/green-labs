@@ -23,10 +23,10 @@ const Footer = forwardRef((props, ref) => {
       </div>
       <div className='footer-up'>
         <div className='connect'>CONNECT
-          <Draggable axis="x" >
+       
 
             <img src={drag} className='dragg' />
-          </Draggable>
+       
 
 
         </div>
