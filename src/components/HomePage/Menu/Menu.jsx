@@ -97,7 +97,7 @@ const Menu = (props) => {
 
             <div className={`MenuPage ${props.menu && "openM"}`} ref={boxRef}>
                 <div className='head'>
-                    <img src={logoWhite} />
+                    <img src={logoWhite} className="birinci"/>
                     <img src={cancelIco} onClick={open} />
                 </div>
 
@@ -247,7 +247,7 @@ const Menu = (props) => {
                 </div>
                 <div className='endPart'>
                     <div className='endL' style={{ marginRight: "4%" }}>
-                        <p stye={{ borderBottom: "1px solid #dbdbdb" }}>Connect with us</p>
+                        <p >Connect with us</p>
                         <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-start", marginTop: "10%" }}>
                             {/* <i className='icon-link'></i> */}
                             <p className="fromLeft" style={{ width: "100%", color: "#dbdbdb", fontSize: "1em" }}>

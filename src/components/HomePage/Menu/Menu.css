@@ -144,7 +144,7 @@ h3{
 .head{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 5%;
     padding: 0 8%;
     text-align: center;
@@ -348,3 +348,74 @@ p{
   -webkit-text-stroke: 2px white;
   color: transparent;
 }
+@media only screen and (max-width:1000px) {
+    .endPart {
+        display: flex;
+        margin: 2% 5% 0 6%;
+    }
+    .middle{
+        flex-direction: column;
+    }
+    .leftAside{
+        height: 60vh;
+        width: 100%;
+        margin-top: 10%;
+    }
+    .call{
+        margin-top: 0;
+    }
+    .as{
+        margin-left: 8% !important;
+    }
+    .MenuPage{
+        overflow: scroll;
+    }
+    .rightAside{
+        margin-top: 10%;
+    }
+    .adress{
+        margin-block-end: 3em;
+    }
+    .floor .fromLeft{
+        display: none;
+    }
+    .fromLeft::before{
+        display: none;
+    }
+}
+@media only screen and (max-width:500px) {
+  .as{
+    font-size: 3rem;
+  }
+  .leftAside{
+    height: 45vh;
+  }
+  .endL{
+    margin-right: 13% !important;
+  }
+  .middle{
+    margin-top: 10%;
+  }
+  .middle .leftAside .coming1  {
+ 
+  display: none !important;
+  }
+}
+@media only screen and (max-width:400px) {
+    .birinci{
+        display: none;
+    }
+    .head{
+        text-align: right;
+        display: block;
+    }
+    .as{
+        font-size: 2.5rem;
+      }
+      .rightAside{
+        margin-top: 15%;
+      }
+      .endL{
+        margin-right: 0 !important;
+      }
+  }

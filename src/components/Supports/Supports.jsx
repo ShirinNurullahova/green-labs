@@ -4,6 +4,10 @@ import { useCallback } from "react";
 import '../Supports/Supports.css'
 import one from '../Images/1.jpeg';
 import { Link } from "react-router-dom";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
+
 const useMausePosition = () => {
     const [mausePosition, setMausePosition] = React.useState({ x: 0, y: 0 })
     useEffect(() => {
@@ -35,27 +39,42 @@ const Supports = forwardRef((props, ref) => {
         e.stopPropagation()
         imgRef.current.src = myObj[e.currentTarget.dataset.index];
         imgRef.current.classList.add('image-active')
-        imgRef.current.style.transform = 'scale(3) '
+        imgRef.current.style.transform = 'scale(3)  translate(-50%, -50%)'
         imgRef.current.style.display = 'block'
 
     }
     const onLeave = (e) => {
         e.stopPropagation()
         imgRef.current.classList.remove('image-active')
-        imgRef.current.style.transform = 'scale(0) '
+        imgRef.current.style.transform = 'scale(0)'
         // imgRef.current.style.display = undefined
 
     }
-
-
     const { x, y } = useMausePosition();
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
 
     return (
         <div>
-            <div style={{ position: 'relative' }}><img className="image-inactive" ref={imgRef} style={{ left: x, top: y }}></img></div>
             <div className="support-div" ref={ref}>
-                <div className='support-text' >
 
+            <div style={{ position: 'relative' }}><img className="image-inactive" ref={imgRef} style={{ left: x, top: y}}></img></div>
+
+                <div className='support-text' >
+                           
+                  
                     <div className="esas">
                         <div className="shekil" >
                             <img data-index={0} onMouseEnter={onEnter} onMouseLeave={onLeave}
@@ -109,7 +128,7 @@ const Supports = forwardRef((props, ref) => {
                                 data-index={6} onMouseEnter={onEnter} onMouseLeave={onLeave}
                                 src="//images.ctfassets.net/hk1y6qq9eac8/1U3nzq23qZbGymxaAJb2ub/4ba6d1faf6bb80a5b4c0a304a9f2c6b7/sib-logo.svg" alt="//images.ctfassets.net/hk1y6qq9eac8/1U3nzq23qZbGymxaAJb2ub/4ba6d1faf6bb80a5b4c0a304a9f2c6b7/sib-logo.svg" class="img-fluid normal-logo" />
                         </div>
-                        <p className="client" id="wit">With Us</p>
+                        <p className="client" id="wit">With</p>
                         <div className="shekil" >
                             <img
                                 data-index={7} onMouseEnter={onEnter} onMouseLeave={onLeave}

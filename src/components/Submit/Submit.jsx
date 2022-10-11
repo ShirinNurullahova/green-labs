@@ -27,7 +27,7 @@ const Submit = () => {
 
         tl
             
-            .fromTo(boxRef.current, { height: "130vh", duration: 10 }, {
+            .fromTo(boxRef.current, { height: "140vh", duration: 10 }, {
                 height: "0vh",
                 delay: 0.5,
             }, '>')

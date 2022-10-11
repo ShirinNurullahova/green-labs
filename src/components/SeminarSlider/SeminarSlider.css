@@ -71,6 +71,13 @@ input::-moz-range-track {
 }
 
 input:active::-webkit-slider-thumb {
-    /* background-color: #ffffff; */
+
    
+}
+
+@media only screen and (max-width: 400px) {
+    .seminar-slider__control-range {
+        width: 60%;
+        margin: 0 auto;
+    }
 }

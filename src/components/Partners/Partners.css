@@ -50,12 +50,26 @@ margin-top: 20%;
 .xett{
     position: relative;
 }
-/* .xett::after{
-    position: absolute;
-    left: 0;
-    top:100%;
-    width: 70%;
-    height: 0.3125em;
-    background: #0bd46e;
-    content: '';
-} */
+@media only screen and (max-width: 500px) {
+   
+    .marka{
+        margin: 5% 0;
+    }
+    .marka-img{
+        transform: none !important;
+        width: 30%;
+    
+        margin-right: 20%;
+        margin-top: 5%;
+    }
+    #apple{
+        width: 10%;
+        margin-right: 40%;
+    }
+    #adam{
+        width: 10%;  
+    }
+    .esas-partner{
+        margin-top: 50%;
+    }
+}

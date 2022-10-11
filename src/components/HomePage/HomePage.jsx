@@ -138,15 +138,14 @@ const HomePage = () => {
 
     anna++
     if (anna >= 4) {
-      // console.log('cixmag vaxtidi')
       return
     }
-    // console.log('girdiyeeee girdi girdi ')
+
 
     let tl = gsap.timeline()
-    // console.log("salam")
+    
     setTimeout(() => {
-      // console.log("sagol")
+       
       setLoading(false);
 
     }, 3000);
@@ -431,7 +430,6 @@ const HomePage = () => {
       .to(listRef114.current, {
         rotateY: "2.142rad", scrollTrigger: {
           trigger: listRef114.current,
-          // markers :true,
           scrub: true
         }
       }, "<")
@@ -611,7 +609,7 @@ const HomePage = () => {
 
             </div>
             <div className="flexTouch" ref={touchRef}>
-              <a aria-label="Get in Touch " className="rolling-text getInTouch" onMouseEnter={handler} onMouseLeave={nonHandler}>
+              <a aria-label="Get in Touch " id='rolling-text' className="rolling-text getInTouch" onMouseEnter={handler} onMouseLeave={nonHandler}>
                 <div className="spans">
                   <span className="block" >
                     <span className="letter">G</span>
@@ -760,7 +758,7 @@ const HomePage = () => {
 
 
 
-          <img style={{ width: "4%" }} src="//images.ctfassets.net/hk1y6qq9eac8/4WNMremI0RneSLlUDnlhUy/1ac9b465a652718f905bcf6fbca97c5f/mark-logo.svg"
+          <img className="secondHeaderImg"  src="//images.ctfassets.net/hk1y6qq9eac8/4WNMremI0RneSLlUDnlhUy/1ac9b465a652718f905bcf6fbca97c5f/mark-logo.svg"
             alt="Greenlight Labs" />
 
 

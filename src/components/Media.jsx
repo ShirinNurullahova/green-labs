@@ -39,7 +39,7 @@ export default ({ url, active, x, y }) => {
         <img
             className={`into ${active && "is-active"}`}
             src={url}
-            style={{ transform: `translate(${x - width / 2}px, ${y - height / 2}px)` }}
+            style={{ transform: `translate(${x-width/2}px, ${y-height/2}px)` }}
             ref={ref}
         />
 

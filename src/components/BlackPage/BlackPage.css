@@ -4,7 +4,7 @@
     height: max-content;
     background-color: #191817;
     display: none;
-  
+     overflow: hidden;
 }
 
 .dragger-text {
@@ -12,12 +12,14 @@
     width: 100%;
     padding-bottom: 5%;
 }
+
 .dragger {
     position: relative;
     width: 100%;
     height: 2.375em;
     margin: 0 0 1.875em 0;
 }
+
 .dragger:before {
     position: absolute;
     left: 0;
@@ -29,6 +31,7 @@
     background: gray;
     content: '';
 }
+
 .handle {
     width: 2.375em;
     height: 2.375em;
@@ -50,9 +53,10 @@
     margin: auto;
     height: 1px;
     width: 0%;
-    background-color: #0bd46e ;
+    background-color: #0bd46e;
     content: '';
 }
+
 .handle:after {
     position: absolute;
     left: 0;
@@ -69,14 +73,16 @@
     -o-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
-    transition: all .5s cubic-bezier(.68,-.55,0,2.46);
+    transition: all .5s cubic-bezier(.68, -.55, 0, 2.46);
     content: '';
 }
-.handle:hover.handle:after{
+
+.handle:hover.handle:after {
     transform: translate(-18px, 1px) scale(0.8);
     /* transition: 0.5s ease all; */
 
 }
+
 .handle:before {
     transform: translateX(-48%);
     position: absolute;
@@ -86,7 +92,7 @@
     height: 100%;
     background: #191817;
     /* z-index: 1; */
-    border: solid 1px #0bd46e ;
+    border: solid 1px #0bd46e;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
@@ -98,21 +104,24 @@
     border-radius: 50%;
     content: '';
 }
+
 .flu {
 
     max-width: 100%;
     height: auto;
 
 }
-.es{
+
+.es {
     position: relative;
     width: 33.125em;
     max-width: 100%;
     display: block;
     margin: 0 auto;
 }
+
 .dragger-text p {
-   width: 20%;
+    width: 20%;
     position: relative;
     left: -25px;
     display: block;
@@ -209,4 +218,113 @@
 
 .cardPartBorder::-webkit-scrollbar {
     display: none;
+}
+
+@media only screen and (max-width: 1700px) {
+    .whoWe {
+        padding-top: 35%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .whoWe {
+        padding-top: 50%;
+    }
+}
+@media only screen and (max-width: 1250px) {
+    .whoWe {
+        padding-top: 55%;
+        padding-left: 100px;
+    }
+}
+@media only screen and (max-width: 1150px) {
+    .whoWe {
+        padding-top: 70%;
+        padding-left: 100px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .who,.weare{
+        font-size: 80px;
+    
+    }
+    .whoWe {
+        padding-top: 60%;
+  
+    }
+}
+@media only screen and (max-width: 800px) {
+    .middleDiv{
+        flex-direction: column;
+    }
+    .whoWe{
+        padding-top: 20%;
+    }
+    .office{
+        margin-left: 0;
+        margin-top: 5%;
+    }
+    .slide{
+        margin-top: 0;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+   
+    .whoWe{
+        padding-top: 30%;
+        padding-left: 5%;
+    }
+   .office{
+    width: 100%;
+   }
+   .who,.weare{
+    font-size: 60px;
+
+}
+}
+@media only screen and (max-width: 550px) {
+   
+    .whoWe{
+        padding-top: 50%;
+      
+    }
+   
+}
+@media only screen and (max-width: 500px) {
+   
+    .whoWe{
+        padding-top: 80%;
+      
+    }
+   .cardPartBorder{
+    padding-top: 15%;
+   }
+}
+@media only screen and (max-width: 400px) {
+   
+    .whoWe{
+        padding-top: 100%;
+    }
+    .weare{
+        -webkit-text-fill-color: white !important;
+
+    }
+   
+}
+@media only screen and (max-width: 380px) {
+   
+    .whoWe{
+        padding-top: 120%;
+      
+    }
+   
+}
+@media only screen and (max-width: 360px) {
+   
+    .whoWe{
+        padding-top: 140%;
+      
+    }
+   
 }

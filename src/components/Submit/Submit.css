@@ -251,3 +251,79 @@
   transition: 1s ease;
   font-size: 15px;
 }
+
+@media only screen and (max-width: 900px) {
+   .green-submit{
+    width: 150px;
+    height: 150px;
+    top:84%
+   }
+}
+@media only screen and (max-width: 700px) {
+   .input-part-4{
+    width: 50%;
+   }
+
+ }
+ @media only screen and (max-width: 600px) {
+   .letsCreate{
+    font-size: 3em;
+    top:10%
+   }
+   .green-submit{
+    top:90%
+   }
+   .label-name ,.label-name-end{
+    font-size: 2em;
+    width: 100%;
+   }
+   .submit-name{
+    margin-top: 10%;
+   }
+   .input-part{
+    top:45%
+   }
+   .input-part-3{
+    top:75%
+   }
+   .input-part-4{
+    top:86%
+   }
+   .input-part{
+    align-items: flex-start;
+   }
+  }
+  @media only screen and (max-width: 450px) {
+   .green-submit{
+    font-size: 1.5em;
+    width: 100px;
+    height: 100px;
+    top:93%
+   }
+   .dif{
+    color: white;
+    /* -webkit-text-fill-color: #fff; */
+    -webkit-text-stroke-width: 0;
+    /* -webkit-text-stroke-color: white; */
+   }
+  }
+  @media only screen and (max-width: 400px) {
+      .input-part{
+        top:55%
+      }
+      .qaradi{
+        height: 140vh;
+      }
+      .input-part-2{
+        top:80%
+      }
+      .input-part-3{
+        top:105%
+      }
+      .input-part-4{
+        top:125%
+      }
+      .green-submit{
+        top:125%
+      }
+   }

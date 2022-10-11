@@ -23,10 +23,10 @@ const Footer = forwardRef((props, ref) => {
       </div>
       <div className='footer-up'>
         <div className='connect'>CONNECT
-       
 
-            <img src={drag} className='dragg' />
-       
+
+          <img src={drag} className='dragg' />
+
 
 
         </div>
@@ -34,7 +34,7 @@ const Footer = forwardRef((props, ref) => {
 
 
 
-        <Link to='/submit'>
+        <Link to='/submit' className='sbmt'>
           <div className="flexTouch" ref={touchRef}>
             <i className='icon-linkedin'></i>
             <a aria-label="Get in Touch " className="rolling-text getInTouch">
@@ -77,7 +77,7 @@ const Footer = forwardRef((props, ref) => {
 
 
       </div>
-      <div className="es">
+      <div className="es" id="es">
 
 
         <div className="dragger-text">
@@ -91,7 +91,7 @@ const Footer = forwardRef((props, ref) => {
       </div>
       <div className='footer-contact'>
         <div id='ftline'></div>
-        <div style={{ display: "flex" }}>
+        <div className="footer-response">
           <div className='contact-1'>
             <span className='contact-span'></span>
             <p className='contact-adress' style={{ textAlign: "left" }}>Adress:</p>
@@ -211,14 +211,55 @@ const Footer = forwardRef((props, ref) => {
           <div className='contact-1'>
             <span className='contact-span' ></span>
             <p className='contact-adress' style={{ textAlign: "left" }}>Email:</p>
-            <div className='basliq'>
+            <div className='basliq' id='email'>
               <div className='contact-text' style={{ textAlign: "left" }}>
                 <p className='contact-text-p'>
                   sirin.nurullahova@mail.ru
                 </p>
 
               </div>
+              <Link to='/submit' className='sbmt1'>
+                <div className="flexTouch" ref={touchRef}>
+
+                  <a aria-label="Get in Touch " className="rolling-text getInTouch">
+                    <div className="spans">
+                      <span className="block" >
+                        <span className="letter" style={{ color: "#0bd46e" }}>S</span>
+                        <span className="letter" style={{ color: "#0bd46e" }}>u</span>
+                        <span className="letter" style={{ color: "#0bd46e" }}>b</span>
+                        {/* <span className="letter">&nbsp;</span> */}
+                        <span className="letter" style={{ color: "#0bd46e" }}>m</span>
+                        <span className="letter" style={{ color: "#0bd46e" }}>i</span>
+                        {/* <span className="letter ">&nbsp;</span> */}
+
+                        <span className="letter" style={{ color: "#0bd46e" }}>t</span>
+
+
+
+                      </span>
+                      <span className="block" >
+                        <span className="letter" style={{ color: 'black' }}>S</span>
+                        <span className="letter" style={{ color: 'black' }}>u</span>
+                        <span className="letter" style={{ color: 'black' }}>b</span>
+                        {/* <span className="letter">&nbsp;</span> */}
+                        <span className="letter" style={{ color: 'black' }}>m</span>
+                        <span className="letter" style={{ color: 'black' }}>i</span>
+                        {/* <span className="letter">&nbsp;</span> */}
+                        <span className="letter" style={{ color: 'black' }}>t</span>
+                        {/* <span className="letter" style={{ color: 'black' }}>o</span>
+                  <span className="letter" style={{ color: 'black' }}>u</span>
+                  <span className="letter" style={{ color: 'black' }}>c</span>
+                  <span className="letter" style={{ color: 'black' }}>h</span> */}
+
+                      </span>
+                    </div>
+
+                  </a>
+
+                </div>
+              </Link>
             </div>
+
           </div>
         </div>
 

@@ -110,7 +110,7 @@
     transition: all 1s;
 }
 
-/* .shekil:hover img {
+.shekil:hover img {
     filter: none;
     transform: scale(2);
     transition: all 1s;
@@ -119,7 +119,7 @@
 
 .shekil:hover {
     transform: scale(1);
-} */
+}
 
 .circleImage {
     opacity: 0;
@@ -166,3 +166,42 @@
     border-radius: 50%;
     transition: all 1s ease-out;
 }
+
+@media only screen and (max-width: 1000px) {
+    .shekil img{
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 700px) {
+  .image-inactive{
+    width: 50px;
+    height: 50px;
+  }
+  .client ,.love{
+    font-size: 80px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .shekil{
+    display: none;
+  }
+  .esas-3 {
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .client, .lov, .love {
+    margin-top: -10px !important;
+}
+#lov{
+    color: black;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+}
+@media only screen and (max-width: 400px) {
+   
+    .client ,.love{
+      font-size: 70px;
+    }
+  }

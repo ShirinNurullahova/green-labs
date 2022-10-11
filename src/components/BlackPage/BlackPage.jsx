@@ -40,7 +40,8 @@ const BlackPage = forwardRef((props, ref) => {
       // console.log("sagol")
       // setLoading(false);
     }, 3000);
-    tl.fromTo(text1.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+    tl
+    .fromTo(text1.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
       y: "0%",
       autoAlpha: 1,
       rotation: "0deg",
@@ -160,26 +161,25 @@ const BlackPage = forwardRef((props, ref) => {
           // pin: true,
         },
       }, '<')
-      .from(officeRef.current, {
-        x: -200,
-        opacity: 0,
-        stagger: 0.3,
-        scrollTrigger: {
-          // start: 'top top',
-          end: "+=300",
-          // markers: true,
-          trigger: officeRef.current,
-          scrub: true,
-          // pin: true,
-        },
-      });
+      // .from(officeRef.current, {
+      //   x: 100,
+      //   stagger: 0.3,
+      //   scrollTrigger: {
+      //     // start: 'top top',
+      //     end: "+=300",
+      //     // markers: true,
+      //     trigger: officeRef.current,
+      //     scrub: true,
+      //     // pin: true,
+      //   },
+      // });
 
   });
 
 
 
   return (
- 
+
     <div className="blackDiv" id='blackDiv' ref={ref} >
 
       <div className="whoWe" >
@@ -192,7 +192,7 @@ const BlackPage = forwardRef((props, ref) => {
 
           <br />
 
-          <span className="weare" style={{ display: "flex", overflow: "hidden", position:"absolute" , zIndex:1 }}>
+          <span className="weare" style={{ display: "flex", overflow: "hidden", position: "absolute", zIndex: 1 }}>
             <div ref={text4}>W</div>
             <div ref={text5} style={{ paddingRight: '40px' }}>e</div>
 
@@ -212,11 +212,11 @@ const BlackPage = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
-      <SeminarSlider/>
+      <SeminarSlider />
 
       <div className="es">
-     
-        
+
+
         <div className="dragger-text">
           <span className="drag">Drag to see more</span>
           <p>
@@ -227,7 +227,7 @@ const BlackPage = forwardRef((props, ref) => {
 
       </div>
     </div>
-    
+
   )
 }
 )

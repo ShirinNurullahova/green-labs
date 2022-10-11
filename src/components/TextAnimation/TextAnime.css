@@ -121,7 +121,7 @@
 .m-scroll1:hover,
 .m-scroll:hover {
   animation-play-state: paused;
-
+  
 }
 
 .into {
@@ -178,4 +178,17 @@
 .mainDiv img {
   width: 500px;
   height: 500px;
+}
+@media only screen and (max-width: 700px) {
+    .media-p ,.media-p1{
+      display: none;
+    }
+   .m-scroll span , .m-scroll1 span{
+    font-size: 4.5rem;
+   }
+   .m-scroll1:hover span,
+.m-scroll:hover span {
+      font-weight: 700;
+      transition: 1s ease;
+}  
 }
