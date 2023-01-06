@@ -31,7 +31,7 @@ input::-webkit-slider-thumb {
     cursor: pointer;
     border-radius: 50%;
     pointer-events: auto;
-    border: 1.5px solid #0bd46e ;
+    border: 1.5px solid rgb(0, 70, 134) ;
     background-color: #191817;
     /* position: absolute; */
 }

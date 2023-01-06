@@ -7,7 +7,7 @@ import Title from '../../Title';
 import sampleData from '../../utils/sampleData';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import logocla from '../../Images/logo1.png'
 const Menu = (props) => {
 
   
@@ -97,7 +97,7 @@ const Menu = (props) => {
 
             <div className={`MenuPage ${props.menu && "openM"}`} ref={boxRef}>
                 <div className='head'>
-                    <img src={logoWhite} className="birinci"/>
+                    <img src={logocla} style={{width:'15%'}} className="birinci"/>
                     <img src={cancelIco} onClick={open} />
                 </div>
 
@@ -251,7 +251,7 @@ const Menu = (props) => {
                         <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-start", marginTop: "10%" }}>
                             {/* <i className='icon-link'></i> */}
                             <p className="fromLeft" style={{ width: "100%", color: "#dbdbdb", fontSize: "1em" }}>
-                                <span> GreenLight Labs</span>
+                                <span>Claradix Studio</span>
                             </p>
                         </div>
 

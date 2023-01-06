@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom';
 import $ from 'jquery';
 import '../Sharper/Sharper.css';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import newlogo from '../Images/newlogo.png'
+import newlogo from '../Images/logo1.png'
 import loader from "../Images/loader.svg";
 import random from "../Images/randomm.svg";
 import partlogo from "../Images/tc-top-logo.svg";
 import { gsap } from "gsap";
 import Menu from '../HomePage/Menu/Menu'
 import Footer from '../Footer/Footer';
+import line from "../Images/line-1.svg"
+
 gsap.registerPlugin(ScrollTrigger)
 
 let anna = 0
@@ -49,7 +51,43 @@ const Sharper = () => {
       }
     });
   });
+  const listRef1 = useRef()
+  const listRef111 = useRef()
+  const listRef112 = useRef()
+  const listRef113 = useRef()
+  const listRef114 = useRef()
+  const listRef115 = useRef()
+  const listRef116 = useRef()
+  const listRef117 = useRef()
+  const listRef118 = useRef()
+  const listRef119 = useRef()
+  const listRef120 = useRef()
+  const listRef121 = useRef()
+  const listRef122 = useRef()
+  const listRef123 = useRef()
+  const listRef124 = useRef()
+  const listRef125 = useRef()
+  const listRef126 = useRef()
+  const listRef127 = useRef()
 
+  const listRef2 = useRef()
+  const listRef3 = useRef()
+  const listRef4 = useRef()
+  const listRef5 = useRef()
+  const listRef6 = useRef()
+  const listRef7 = useRef()
+  const listRef8 = useRef()
+  const listRef9 = useRef()
+  const listRef10 = useRef()
+  const listRef11 = useRef()
+  const listRef12 = useRef()
+  const listRef13 = useRef()
+  const listRef14 = useRef()
+  const listRef15 = useRef()
+  const listRef16 = useRef()
+  const listRef17 = useRef()
+  const digitRef = useRef()
+  const ulRef = useRef()
   const [menu, setMenu] = useState(false);
 
   const toggleMenu = (e) => {
@@ -121,6 +159,41 @@ const Sharper = () => {
       .to(boxRef1.current, { height: "100vh ", duration: 1.5 }, ">")
       .to(boxRef2.current, { display: "block", duration: 1.5 }, ">")
       .to(footerRef.current, { display: "block", duration: 1.5 }, "<")
+      .fromTo(listRef1.current, { opacity: 0 }, { opacity: 1 }, "<")
+      .fromTo(listRef2.current, { opacity: 0 }, { opacity: 1, delay: 0.1 }, "<")
+      .fromTo(listRef3.current, { opacity: 0 }, { opacity: 1, delay: 0.1 }, "<")
+      .fromTo(listRef4.current, { opacity: 0 }, { opacity: 1, delay: 0.1 }, "<")
+      .fromTo(listRef5.current, { opacity: 0 }, { opacity: 1, delay: 0.1 }, "<")
+      .fromTo(listRef6.current, { opacity: 0 }, { opacity: 1, delay: 0.1 }, "<")
+      .fromTo(listRef7.current, { opacity: 0 }, { opacity: 1, delay: 0.1 }, "<")
+      .fromTo(listRef8.current, { opacity: 0 }, { opacity: 1, delay: 0.1 }, "<")
+      .fromTo(listRef9.current, { opacity: 0 }, { opacity: 1, delay: 0.1 }, "<")
+      .fromTo(listRef10.current, { opacity: 0 }, { opacity: 1, delay: 0.1 }, "<")
+      .fromTo(listRef11.current, { opacity: 0 }, { opacity: 1, delay: 0.1 }, "<")
+      .fromTo(listRef12.current, { opacity: 0 }, { opacity: 1, delay: 0.1 }, "<")
+      .fromTo(listRef13.current, { opacity: 0 }, { opacity: 1, delay: 0.1 }, "<")
+      .fromTo(listRef14.current, { opacity: 0 }, { opacity: 1, delay: 0.1 }, "<")
+      .fromTo(listRef15.current, { opacity: 0 }, { opacity: 1, delay: 0.1 }, "<")
+      .fromTo(listRef16.current, { opacity: 0 }, { opacity: 1, delay: 0.1 }, "<")
+      .fromTo(listRef17.current, { opacity: 0 }, { opacity: 1, delay: 0.1 }, "<")
+
+      .to(listRef17.current, { transform: "translate(0px,-65.8824% )" }, "<")
+      .to(listRef16.current, { transform: "translate(0px,  -69.7647%)" }, "<")
+      .to(listRef15.current, { transform: "translate(0px,  -74.6471%)" }, "<")
+      .to(listRef14.current, { transform: "translate(0px,  -79.5294%)" }, "<")
+      .to(listRef13.current, { transform: "translate(0px,  -84.4118%)" }, "<")
+      .to(listRef12.current, { transform: "translate(0px,  -89.2941%)" }, "<")
+      .to(listRef11.current, { transform: "translate(0px,  -94.1765%)" }, "<")
+      .to(listRef10.current, { transform: "translate(0px,  -99.9412%)" }, "<")
+      .to(listRef9.current, { transform: "translate(0px,  -104.0588%)" }, "<")
+      .to(listRef8.current, { transform: "translate(0px,  -109.8235%)" }, "<")
+      .to(listRef7.current, { transform: "translate(0px,  -114.7059%)" }, "<")
+      .to(listRef6.current, { transform: "translate(0px,  -119.5882%)" }, "<")
+      .to(listRef5.current, { transform: "translate(0px,  -124.4706%)" }, "<")
+      .to(listRef4.current, { transform: "translate(0px,  -129.3529%)" }, "<")
+      .to(listRef3.current, { transform: "translate(0px, -134.2353%)" }, "<")
+      .to(listRef2.current, { transform: "translate(0px, -139.1176% )" }, "<")
+      .to(listRef1.current, { transform: "translate(0px, -143.1176% )" }, "<")
 
       .fromTo(one.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
         y: "0%",
@@ -326,25 +399,48 @@ const Sharper = () => {
     });
   });
 
-  const textOne= useRef()
-  const textTwo= useRef()
+  const textOne = useRef()
+  const textTwo = useRef()
   const textThree = useRef()
   const textFour = useRef()
- 
+
 
 
   if (loading) {
     return <>
-
-      <img className="loadload" src={loader} />
+      <img className="loadload" src={loader}/>
     </>
   }
+  
   return (
     <>
-      <div>
+      <div style={{overflowX:'hidden !important'}}>
         <Menu menu={menu} setMenu={setMenu} />
 
         <div className='sharp-circle' id='sharp-circle'>
+
+
+          {/* <div className="digital-lines" ref={digitRef} style={{ zIndex: '9999', rotate: '90deg'}}>
+            <ul className="g-line-list" ref={ulRef}>
+              <li ref={listRef111}  >   <img ref={listRef1} src={line} className="stranger" /></li>
+              <li ref={listRef112}  >    <img ref={listRef2} src={line} className="stranger" /></li>
+              <li ref={listRef113}  >    <img ref={listRef3} src={line} className="stranger" /></li>
+              <li ref={listRef114} >   <img ref={listRef4} src={line} className="stranger" /></li>
+              <li ref={listRef115} >   <img ref={listRef5} src={line} className="stranger" /></li>
+              <li ref={listRef116}>   <img ref={listRef6} src={line} className="stranger" /></li>
+              <li ref={listRef117} >  <img ref={listRef7} src={line} className="stranger" /></li>
+              <li ref={listRef118}  >   <img ref={listRef8} src={line} className="stranger" /></li>
+              <li ref={listRef119} >   <img ref={listRef9} src={line} className="stranger" /></li>
+              <li ref={listRef120} >   <img ref={listRef10} src={line} className="stranger" /></li>
+              <li ref={listRef121}>   <img ref={listRef11} src={line} className="stranger" /></li>
+              <li ref={listRef122}>   <img ref={listRef12} src={line} className="stranger" /></li>
+              <li ref={listRef123}  >   <img ref={listRef13} src={line} className="stranger" /></li>
+              <li ref={listRef124}  >   <img ref={listRef14} src={line} className="stranger" /></li>
+              <li ref={listRef125}  >   <img ref={listRef15} src={line} className="stranger" /></li>
+              <li ref={listRef126}  >  <img ref={listRef16} src={line} className="stranger" /></li>
+              <li ref={listRef127}  >   <img ref={listRef17} src={line} className="stranger" /></li>
+            </ul>
+          </div> */}
           <div className={`green ${menu && 'hi'}`} ref={boxRef}></div>
 
           <div className={`white ${menu && 'hii'}`} ref={boxRef1}></div>
@@ -417,9 +513,9 @@ const Sharper = () => {
 
             <div className='blurred'></div>
             <div className='overlay'></div>
-     
-              <div className='sharp' id="sharpen"></div>
-           
+
+            <div className='sharp' id="sharpen"></div>
+
 
             <div className='culture' >
               <div className='culture-reqem'>

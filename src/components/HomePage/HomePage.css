@@ -1,5 +1,5 @@
 .green {
-    background-color: #0bd46e;
+    background-color: rgb(0, 70, 134);
     width: 100vw;
     height: 0;
     /* display: none; */
@@ -12,9 +12,15 @@
     padding: 0 8%;
 
 }
-.secondHeaderImg{
-    width: 4%;
+.random{
+    width: 150%;
 }
+.secondHeaderImg{
+    width: 10%;
+}
+/* .text,.business,.digit {
+    color: white
+} */
 .act {
     height: 4rem;
     width: 90%;
@@ -49,7 +55,8 @@
 }
 
 .white {
-    background-color: #fff;
+    background-color: white;
+    /* background-image: url('../Images//poly.svg'); */
     width: 100vw;
     height: 0;
     position: absolute;
@@ -75,8 +82,8 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    /* border: 3px solid #0bd46e; */
-    background-color: #0bd46e;
+    /* border: 3px solid rgb(0, 70, 134); */
+    background-color: rgb(0, 70, 134);
     opacity: 0.2;
     border-radius: 50%;
     pointer-events: none;
@@ -97,7 +104,7 @@
     border-radius: 50%;
     pointer-events: none;
     z-index: 1000;
-    background-color: #0bd46e;
+    background-color: rgb(0, 70, 134);
 }
 
 .mainPage {
@@ -159,7 +166,7 @@
     top: 0;
     left: 0;
     border-radius: 50%;
-    /* border: 3px solid #0bd46e ; */
+    /* border: 3px solid rgb(0, 70, 134) ; */
     border: 0.6px solid black;
     z-index: 998;
     display: flex;
@@ -171,8 +178,8 @@
 }
 
 .circle:hover {
-    background-color: #0bd46e;
-    border: 1px solid #0bd46e;
+    background-color: rgb(0, 70, 134);
+    border: 1px solid rgb(0, 70, 134);
     cursor: pointer;
     transition: 0.5s ease all;
 }
@@ -275,9 +282,9 @@
 }
 
 .transform:hover .greeno {
-    color: #0bd46e;
+    color: rgb(0, 70, 134);
     width: 2.119em;
-    border-color: #0bd46e;
+    border-color: rgb(0, 70, 134);
 }
 
 .textDiv {
@@ -369,7 +376,7 @@
 }
 
 .rolling-text .block:last-child {
-    color: #0bd46e;
+    color: rgb(0, 70, 134);
 }
 
 .letter {
@@ -432,7 +439,7 @@ a {
     position: relative;
     width: 15px;
     height: 25px;
-    background: #0bd46e;
+    background: rgb(0, 70, 134);
     -webkit-border-radius: 30px;
     border-radius: 30px;
     display: block;

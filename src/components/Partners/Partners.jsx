@@ -18,114 +18,114 @@ const Partners = forwardRef((props, ref) => {
     const client6 = useRef()
     const client7 = useRef()
     const client8 = useRef()
-    useEffect(() => {
-        const tl = gsap.timeline()
-        tl
-            .from(client1.current, {
-                x: 200,
-                // opacity: 0,
-                stagger: 0.3,
-                scrollTrigger: {
-                    // start: 'top top',
-                    end: "+=200",
-                    // markers: true,
-                    trigger: client1.current,
-                    scrub: true,
-                    // pin: true,
-                },
-            })
-            .from(client2.current, {
-                x: 200,
-                // opacity: 0,
-                stagger: 0.3,
-                scrollTrigger: {
-                    // start: 'top top',
-                    end: "+=200",
-                    // markers: true,
-                    trigger: client2.current,
-                    scrub: true,
-                    // pin: true,
-                },
-            })
-            .from(client3.current, {
-                x: 200,
-                // opacity: 0,
-                stagger: 0.3,
-                scrollTrigger: {
-                    // start: 'top top',
-                    end: "+=200",
-                    // markers: true,
-                    trigger: client3.current,
-                    scrub: true,
-                    // pin: true,
-                },
-            })
-            .from(client4.current, {
-                x: 200,
-                // opacity: 0,
-                stagger: 0.3,
-                scrollTrigger: {
-                    // start: 'top top',
-                    end: "+=200",
-                    // markers: true,
-                    trigger: client4.current,
-                    scrub: true,
-                    // pin: true,
-                },
-            })
-            .from(client5.current, {
-                x: 200,
-                // opacity: 0,
-                stagger: 0.3,
-                scrollTrigger: {
-                    // start: 'top top',
-                    end: "+=200",
-                    // markers: true,
-                    trigger: client4.current,
-                    scrub: true,
-                    // pin: true,
-                },
-            })
-            .from(client6.current, {
-                x: 200,
-                // opacity: 0,
-                stagger: 0.3,
-                scrollTrigger: {
-                    // start: 'top top',
-                    end: "+=200",
-                    // markers: true,
-                    trigger: client4.current,
-                    scrub: true,
-                    // pin: true,
-                },
-            })
-            .from(client7.current, {
-                x: 200,
-                // opacity: 0,
-                stagger: 0.3,
-                scrollTrigger: {
-                    // start: 'top top',
-                    end: "+=200",
-                    // markers: true,
-                    trigger: client4.current,
-                    scrub: true,
-                    // pin: true,
-                },
-            })
-            .from(client8.current, {
-                x: 200,
-                // opacity: 0,
-                stagger: 0.3,
-                scrollTrigger: {
-                    // start: 'top top',
-                    end: "+=200",
-                    // markers: true,
-                    trigger: client4.current,
-                    scrub: true,
-                    // pin: true,
-                },
-            })
-    });
+    // useEffect(() => {
+    //     const tl = gsap.timeline()
+    //     tl
+    //         .from(client1.current, {
+    //             x: 200,
+    //             // opacity: 0,
+    //             stagger: 0.3,
+    //             scrollTrigger: {
+    //                 // start: 'top top',
+    //                 end: "+=200",
+    //                 // markers: true,
+    //                 trigger: client1.current,
+    //                 scrub: true,
+    //                 // pin: true,
+    //             },
+    //         })
+    //         .from(client2.current, {
+    //             x: 200,
+    //             // opacity: 0,
+    //             stagger: 0.3,
+    //             scrollTrigger: {
+    //                 // start: 'top top',
+    //                 end: "+=200",
+    //                 // markers: true,
+    //                 trigger: client2.current,
+    //                 scrub: true,
+    //                 // pin: true,
+    //             },
+    //         })
+    //         .from(client3.current, {
+    //             x: 200,
+    //             // opacity: 0,
+    //             stagger: 0.3,
+    //             scrollTrigger: {
+    //                 // start: 'top top',
+    //                 end: "+=200",
+    //                 // markers: true,
+    //                 trigger: client3.current,
+    //                 scrub: true,
+    //                 // pin: true,
+    //             },
+    //         })
+    //         .from(client4.current, {
+    //             x: 200,
+    //             // opacity: 0,
+    //             stagger: 0.3,
+    //             scrollTrigger: {
+    //                 // start: 'top top',
+    //                 end: "+=200",
+    //                 // markers: true,
+    //                 trigger: client4.current,
+    //                 scrub: true,
+    //                 // pin: true,
+    //             },
+    //         })
+    //         .from(client5.current, {
+    //             x: 200,
+    //             // opacity: 0,
+    //             stagger: 0.3,
+    //             scrollTrigger: {
+    //                 // start: 'top top',
+    //                 end: "+=200",
+    //                 // markers: true,
+    //                 trigger: client4.current,
+    //                 scrub: true,
+    //                 // pin: true,
+    //             },
+    //         })
+    //         .from(client6.current, {
+    //             x: 200,
+    //             // opacity: 0,
+    //             stagger: 0.3,
+    //             scrollTrigger: {
+    //                 // start: 'top top',
+    //                 end: "+=200",
+    //                 // markers: true,
+    //                 trigger: client4.current,
+    //                 scrub: true,
+    //                 // pin: true,
+    //             },
+    //         })
+    //         .from(client7.current, {
+    //             x: 200,
+    //             // opacity: 0,
+    //             stagger: 0.3,
+    //             scrollTrigger: {
+    //                 // start: 'top top',
+    //                 end: "+=200",
+    //                 // markers: true,
+    //                 trigger: client4.current,
+    //                 scrub: true,
+    //                 // pin: true,
+    //             },
+    //         })
+    //         .from(client8.current, {
+    //             x: 200,
+    //             // opacity: 0,
+    //             stagger: 0.3,
+    //             scrollTrigger: {
+    //                 // start: 'top top',
+    //                 end: "+=200",
+    //                 // markers: true,
+    //                 trigger: client4.current,
+    //                 scrub: true,
+    //                 // pin: true,
+    //             },
+    //         })
+    // });
 
     return (
         <div className="xett">

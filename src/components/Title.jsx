@@ -4,7 +4,7 @@ export default ({ title, setActiveIndex, index, stil }) => {
     const borderRef = useRef()
 
     const changeStyle = () => {
-        borderRef.current.style.color = "#0bd46e";
+        borderRef.current.style.color = "rgb(0, 70, 134)";
         borderRef.current.style.webkitTextStroke = "2px white";
         if (stil) {
             borderRef.current.style.webkitTextStroke = "transparent";
@@ -12,10 +12,10 @@ export default ({ title, setActiveIndex, index, stil }) => {
     }
     const changeStyleLeave = () => {
         borderRef.current.style.color = "";
-        borderRef.current.style.webkitTextStroke = "2px #222";
+        borderRef.current.style.webkitTextStroke = "2px rgb(0,70,134)";
         if (stil) {
 
-            borderRef.current.style.webkitTextStroke = "2px #fff";
+            borderRef.current.style.webkitTextStroke = "2px rgb(0, 70, 134)";
 
         }
     }

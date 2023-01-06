@@ -13,7 +13,7 @@
     background-color: black;
     z-index: 1;
     filter: blur(20px);
-  overflow: hidden !important;
+  overflow-x: hidden !important;
 }
 .sharp-circle{
     overflow: hidden;
@@ -75,7 +75,7 @@
         top: 0.6875em;
         height: 1px;
         width: 4.5625em;
-        background:#0bd46e;
+        background:rgb(0, 70, 134);
         content: '';
       
 }

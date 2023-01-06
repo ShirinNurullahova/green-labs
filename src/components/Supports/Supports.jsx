@@ -2,7 +2,7 @@ import React, { forwardRef, useEffect, useRef } from "react";
 import { useLayoutEffect } from "react";
 import { useCallback } from "react";
 import '../Supports/Supports.css'
-import one from '../Images/1.jpeg';
+import one from '../Images/nasa.jpg';
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -51,21 +51,6 @@ const Supports = forwardRef((props, ref) => {
 
     }
     const { x, y } = useMausePosition();
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
     return (
         <div>
             <div className="support-div" ref={ref}>

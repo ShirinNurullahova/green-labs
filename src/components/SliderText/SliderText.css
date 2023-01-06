@@ -1,5 +1,5 @@
 .teen{
-    color: #0bd46e;
+    color: rgb(0, 70, 134);
     font-size: 120px;
     margin-left: 20px;
     text-align: left;
@@ -68,7 +68,7 @@ text-align: left;
   }
   
   .slideshowDot.active {
-    background-color: #0bd46e;
+    background-color: rgb(0, 70, 134);
   }
   .lastText{
     color: white;

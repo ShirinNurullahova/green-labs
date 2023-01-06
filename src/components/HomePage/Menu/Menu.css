@@ -72,11 +72,11 @@
     width:35%;
 }
 .fromLeft:hover span{
-    color: #0bd46e;
+    color: rgb(0, 70, 134);
     transition: 1s ease all;
 }
 .fromLeft:hover{
-    color:#0bd46e
+    color:rgb(0, 70, 134)
 }
 .fromLeft::before{
     position: absolute;
@@ -156,7 +156,7 @@ h3{
     clip-path: circle(140% at 95.3% 0%);
 }
 .bottomPage{
-    background-color: #0bd46e;
+    background-color: rgb(0, 70, 134);
     position: fixed;
     width: 100%;
     height: 100%;
@@ -205,7 +205,7 @@ h3{
     top: 0;
     right: 0;
     border-radius: 50%;
-    /* border: 3px solid #0bd46e ; */
+    /* border: 3px solid rgb(0, 70, 134) ; */
     border: 0.6px solid white;
     /* z-index: 998; */
     display: flex;
@@ -217,8 +217,8 @@ h3{
     display: block;
 }
 .circleWhite:hover {
-    background-color: #0bd46e;
-    border: 1px solid #0bd46e;
+    background-color: rgb(0, 70, 134);
+    border: 1px solid rgb(0, 70, 134);
     cursor: pointer;
     transition: 0.5s ease all;
 }

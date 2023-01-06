@@ -13,7 +13,8 @@ import Partners from "../Partners/Partners";
 import Footer from "../Footer/Footer";
 import Menu from '../HomePage/Menu/Menu';
 import Sharper from '../Sharper/Sharper';
-import yasil from '../Images/yasil.png'
+import yasil from '../Images/logo1.png';
+import little from '../Images/logo1.png'
 gsap.registerPlugin(ScrollTrigger)
 
 let anna = 0
@@ -379,14 +380,14 @@ const HomePage = () => {
       .to(listRef17.current, { transform: "translate(0px,  65.8824%)" }, "<")
 
       // .to(digitRef.current, {
-      //   transform:'rotate3d(1, 1, 1, -45deg)', scrollTrigger: {
+      //   transform:'rotate(90deg)', scrollTrigger: {
       //     trigger: digitRef.current,
       //     // markers :true,
       //     scrub: true
       //   }
       // }, "<")
       // .to(ulRef.current, {
-      //   rotateY: "0.142rad",
+      //   rotate: "90deg",
       //   scrollTrigger: {
       //     trigger: ulRef.current,
       //     // markers :true,
@@ -594,7 +595,11 @@ const HomePage = () => {
       <div>
         <div className={`green ${menu && 'hi'}`} ref={boxRef}></div>
 
-        <div className={`white ${menu && 'hii'}`} ref={boxRef1}></div>
+        <div className={`white ${menu && 'hii'}`} ref={boxRef1}>
+
+
+          
+        </div>
 
         <div className="ball1" ref={ballRef}></div>
         <div className="ball" ref={refSmall}> </div>
@@ -729,7 +734,7 @@ const HomePage = () => {
         </div>
 
 
-        <div className="digital-lines" ref={digitRef} >
+        <div className="digital-lines" ref={digitRef}  >
           <ul className="g-line-list" ref={ulRef}>
             <li ref={listRef111}  >   <img ref={listRef1} src={line} className="stranger" /></li>
             <li ref={listRef112}  >    <img ref={listRef2} src={line} className="stranger" /></li>
@@ -758,7 +763,7 @@ const HomePage = () => {
 
 
 
-          <img className="secondHeaderImg"  src="//images.ctfassets.net/hk1y6qq9eac8/4WNMremI0RneSLlUDnlhUy/1ac9b465a652718f905bcf6fbca97c5f/mark-logo.svg"
+          <img className="secondHeaderImg"  src={little}
             alt="Greenlight Labs" />
 
 
@@ -766,19 +771,19 @@ const HomePage = () => {
             <a aria-label="Get in Touch " className="rolling-text getInTouch" onMouseEnter={handler} onMouseLeave={nonHandler}>
               <div className="spans">
                 <span className="block" >
-                  <span className="letter" style={{ color: "#0bd46e" }}>G</span>
-                  <span className="letter" style={{ color: "#0bd46e" }}>e</span>
-                  <span className="letter" style={{ color: "#0bd46e" }}>t</span>
+                  <span className="letter" style={{ color: "rgb(0, 70, 134)" }}>G</span>
+                  <span className="letter" style={{ color: "rgb(0, 70, 134)" }}>e</span>
+                  <span className="letter" style={{ color: "rgb(0, 70, 134)" }}>t</span>
                   <span className="letter">&nbsp;</span>
-                  <span className="letter" style={{ color: "#0bd46e" }}>i</span>
-                  <span className="letter" style={{ color: "#0bd46e" }}>n</span>
+                  <span className="letter" style={{ color: "rgb(0, 70, 134)"}}>i</span>
+                  <span className="letter" style={{ color: "rgb(0, 70, 134)" }}>n</span>
                   <span className="letter ">&nbsp;</span>
 
-                  <span className="letter" style={{ color: "#0bd46e" }}>T</span>
-                  <span className="letter" style={{ color: "#0bd46e" }}>o</span>
-                  <span className="letter" style={{ color: "#0bd46e" }}>u</span>
-                  <span className="letter" style={{ color: "#0bd46e" }}>c</span>
-                  <span className="letter" style={{ color: "#0bd46e" }}>h</span>
+                  <span className="letter" style={{color: "rgb(0, 70, 134)"}}>T</span>
+                  <span className="letter" style={{ color: "rgb(0, 70, 134)" }}>o</span>
+                  <span className="letter" style={{ color: "rgb(0, 70, 134)"}}>u</span>
+                  <span className="letter" style={{color: "rgb(0, 70, 134)" }}>c</span>
+                  <span className="letter" style={{ color: "rgb(0, 70, 134)" }}>h</span>
 
 
                 </span>

@@ -6,7 +6,8 @@ import './BlackPage.css';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import imageData from "../utils/imageData";
-import '../CardPart/CardPart.css'
+import '../CardPart/CardPart.css';
+import elebele from '../Images/elebele.png'
 import SeminarSlider from "../SeminarSlider/SeminarSlider ";
 gsap.registerPlugin(ScrollTrigger)
 
@@ -41,21 +42,21 @@ const BlackPage = forwardRef((props, ref) => {
       // setLoading(false);
     }, 3000);
     tl
-    .fromTo(text1.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
-      y: "0%",
-      autoAlpha: 1,
-      rotation: "0deg",
-      delay: 0.05,
-      stagger: 0.3,
-      scrollTrigger: {
-        // start: 'top top',
-        end: "+=300",
-        // markers: true,
-        trigger: text1.current,
-        scrub: true,
-        // pin: true,
-      },
-    }, '<')
+      .fromTo(text1.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
+        y: "0%",
+        autoAlpha: 1,
+        rotation: "0deg",
+        delay: 0.05,
+        stagger: 0.3,
+        scrollTrigger: {
+          // start: 'top top',
+          end: "+=300",
+          // markers: true,
+          trigger: text1.current,
+          scrub: true,
+          // pin: true,
+        },
+      }, '<')
       .fromTo(text2.current, { y: "100%", autoAlpha: 0, rotation: "15deg" }, {
         y: "0%",
         autoAlpha: 1,
@@ -161,18 +162,18 @@ const BlackPage = forwardRef((props, ref) => {
           // pin: true,
         },
       }, '<')
-      // .from(officeRef.current, {
-      //   x: 100,
-      //   stagger: 0.3,
-      //   scrollTrigger: {
-      //     // start: 'top top',
-      //     end: "+=300",
-      //     // markers: true,
-      //     trigger: officeRef.current,
-      //     scrub: true,
-      //     // pin: true,
-      //   },
-      // });
+    // .from(officeRef.current, {
+    //   x: 100,
+    //   stagger: 0.3,
+    //   scrollTrigger: {
+    //     // start: 'top top',
+    //     end: "+=300",
+    //     // markers: true,
+    //     trigger: officeRef.current,
+    //     scrub: true,
+    //     // pin: true,
+    //   },
+    // });
 
   });
 
@@ -183,6 +184,7 @@ const BlackPage = forwardRef((props, ref) => {
     <div className="blackDiv" id='blackDiv' ref={ref} >
 
       <div className="whoWe" >
+      
         <h1 className="main-text" ref={mainRef}>
           <span className="who" style={{ display: "flex", overflow: "hidden" }}>
             <div ref={text1}>W</div>
@@ -205,9 +207,9 @@ const BlackPage = forwardRef((props, ref) => {
         <div className="middleDiv">
           <SliderText />
           <div className="office" ref={officeRef}>
-            <p class="lead">We are the front-office technology arm of The Collective.</p>
-            <p className="platform">      We are a platform-agnostic digital consultancy. We work with our clients to solve strategic business
-              challenges by creating exceptional experiences through stunning design and deep technology expertise.</p>
+            <p class="lead">WE CREATE THE ORIGINAL OF IT</p>
+            <p className="platform">   HOW WE DO IT? CUTTING-EDGE TECHNOLOGY COMBINED WITH CREATIVE MINDS. SIMPLE YET INIMITABLE JUST LIKE 
+            PASSION, PASSION FOR THE CRAFT. WE LEVERAGE THE FULL POWER OF DIGITAL AND ART.</p>
 
           </div>
         </div>
@@ -226,6 +228,8 @@ const BlackPage = forwardRef((props, ref) => {
         </div>
 
       </div>
+     
+
     </div>
 
   )

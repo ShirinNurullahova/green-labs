@@ -54,12 +54,12 @@ color: rgb(14, 10, 10);
     width: auto;
 }
 hr{
-    background-color: #0bd46e !important;
+    background-color: rgb(0, 70, 134) !important;
     width: 94%;
     margin-top: -15px;
     transition: 0.5s;
-    border:#0bd46e !important;
-    color:#0bd46e;
+    border:rgb(0, 70, 134) !important;
+    color:rgb(0, 70, 134);
     height: 2px;
 
 }
@@ -78,7 +78,7 @@ ul {
 
 .point::before {
     content: "•";
-    color: #0bd46e;
+    color: rgb(0, 70, 134);
     margin-right: 10px;
 }
 
@@ -98,13 +98,13 @@ ul {
     transform: translateY(-350%);
 }
 hr{
-    color: #0bd46e !important;
+    color: rgb(0, 70, 134) !important;
     width: 140%;
     margin-top: 10%;
-    /* background-color: #0bd46e; */
+    /* background-color: rgb(0, 70, 134); */
 }
 .exp {
-    /* border-bottom: 1px solid #0bd46e; */
+    /* border-bottom: 1px solid rgb(0, 70, 134); */
 }
 
 .common1:hover .anim,
@@ -120,7 +120,7 @@ hr{
 
 .common1:hover {
     transform: translateY(-50px);
-    border: 1px solid #0bd46e;
+    border: 1px solid rgb(0, 70, 134);
 }
 @media only screen and (max-width: 500px) {
      .common1{
